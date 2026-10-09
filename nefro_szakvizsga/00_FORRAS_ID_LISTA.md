@@ -101,6 +101,37 @@
 | [ ] | **`KDIGO-ADPKD`** | KDIGO – ADPKD | 1 | 26 |
 | [ ] | **`KDIGO-LIPID`** | KDIGO – Lipid Management in CKD | 1 | 49 |
 
+
+# Kiegészítő nemzetközi irányelvek – Forráslista és finomhangolás
+
+
+ezeket már beraktam az átnevezőbe, úgyhogy ha oda töltöd le ezeket a fieloakt autóamituksan elhelyezi a megfelelő heylre
+
+## 1. Letöltési és elnevezési jegyzék (Mapping)
+
+Mindegyik dokumentum **PRIORITÁS 3 – Nemzetközi irányelv**, ezért egységesen a `03_kdigo/_pdf/` mappába kerül.
+
+| Dokumentum neve | Hivatalos elérhetőség / Keresés | Célmappa | Kötelező `forras_id` (Fájlnév) | Érintett tételek | Cél NotebookLM füzet |
+|---|---|---|---|:---:|---|
+| **EULAR / ERA Lupus Nephritis Guideline (2023 Update)** | [PubMed Central / ARD](https://ard.bmj.com/content/83/1/15)<br>*Cím: „Joint EULAR/ERA recommendations for the management of lupus nephritis: 2023 update”* | `03_kdigo/_pdf/` | `EULAR-ERA-LN-2023.pdf` | **15** | `30 – Glomerulopátiák, immunológia` |
+| **ISPD Peritonitis Guideline (2022 Update)** | [ispd.org/guidelines](https://ispd.org/guidelines/)<br>*Cím: „ISPD peritonitis guideline recommendations: 2022 update on prevention and treatment”* | `03_kdigo/_pdf/` | `ISPD-PERITONITIS-2022.pdf` | **60, 61** | `100 – Vesepótló kezelés` |
+| **ISPD High-Quality PD Prescribing (2020)** | [ispd.org/guidelines](https://ispd.org/guidelines/)<br>*Cím: „Creating high-quality peritoneal dialysis prescriptions: The role of Kt/V and beyond”* | `03_kdigo/_pdf/` | `ISPD-PRESCRIBING-2020.pdf` | **60, 61** | `100 – Vesepótló kezelés` |
+| **KDIGO 2024 CKD Guideline** | [kdigo.org/guidelines](https://kdigo.org/guidelines/ckd-evaluation-and-management/)<br>*Cím: „KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease”* | `03_kdigo/_pdf/` | `KDIGO-CKD-2024.pdf` | **1–3, 45–49** | `90 – CKD és szövődményei` |
+| **KDIGO 2023 / 2022 Diabetes in CKD** | [kdigo.org/guidelines](https://kdigo.org/guidelines/diabetes-ckd/)<br>*Cím: „KDIGO 2023 Clinical Practice Guideline for Diabetes Management in CKD”* | `03_kdigo/_pdf/` | `KDIGO-DIABETES-2023.pdf` | **19, 20** | `40 – Diabétesz, hypertonia` |
+
+---
+
+## 2. A generáló finomhangolása letöltés után (3 lépésben)
+
+A meglévő determinisztikus ellenőrző és horgonyzó rendszert nem kell átírni, a folyamat automatikusan illeszkedik:
+
+### 1️⃣ Lépés: Helyi mentés és horgonyozás (Ingress)
+1. Mentsd a letöltött PDF-eket közvetlenül a megadott néven a `nefro_szakvizsga/03_kdigo/_pdf/` mappába.
+2. Futtasd le a terminálban:
+   ```powershell
+   python _scriptek\pdf_horgonnyal.py
+
+
 ## PRIORITÁS 5 – AJKD Core Curriculum
 
 **Mentsd ide:** `05_tankonyv_en/_pdf/`
