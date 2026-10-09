@@ -54,11 +54,16 @@ ARCHIV_MD = "../_ARCHIV_LEJART/md"
 # KDIGO és AJKD CC dokumentumok — PRIORITÁS 3 – Nemzetközi irányelv
 KDIGO_PDF = "03_kdigo/_pdf"
 KDIGO_FORRASOK = {
+    "KDIGO-DIABETES-2023": (KDIGO_PDF, "KDIGO-DIABETES-2023.pdf"),
+    "KDIGO-GN-2021": (KDIGO_PDF, "KDIGO-GN-2021.pdf"),
     "EULAR-ERA-LN-2023": (KDIGO_PDF, "EULAR-ERA-LN-2023.pdf"),
+    "EULAR-ANCA-2023": (KDIGO_PDF, "EULAR-ANCA-2023.pdf"),
     "ISPD-PERITONITIS-2022": (KDIGO_PDF, "ISPD-PERITONITIS-2022.pdf"),
     "ISPD-PRESCRIBING-2020": (KDIGO_PDF, "ISPD-PRESCRIBING-2020.pdf"),
+    "KDIGO-TX-RECIPIENT": (KDIGO_PDF, "KDIGO-TX-RECIPIENT.pdf"),
+    "KDIGO-TX-DONOR": (KDIGO_PDF, "KDIGO-TX-DONOR.pdf"),
+    "KDIGO-CKD-MBD-2017": (KDIGO_PDF, "KDIGO-CKD-MBD-2017.pdf"),
     "KDIGO-CKD-2024": (KDIGO_PDF, "KDIGO-CKD-2024.pdf"),
-    "KDIGO-DIABETES-2023": (KDIGO_PDF, "KDIGO-DIABETES-2023.pdf"),
 }
 
 
@@ -117,10 +122,10 @@ TOBB_SZOKOZ = re.compile(r"\s+")
 # nelkul hamis "NINCS A FORRASBAN" talalatot kapnank olyan idezeteknel,
 # amik valojaban ott vannak a forrasban.
 EGYSEGESIT = str.maketrans({
-    "„": '"', "”": '"', "“": '"', "»": '"', "«": '"',
-    "’": "'", "‘": "'", "´": "'",
+    "„": '"', """: '"', """: '"', "»": '"', "«": '"',
+    "'": "'", "'": "'", "´": "'",
     "–": "-", "—": "-", "−": "-", "‐": "-", "‑": "-",
-    " ": " ", " ": " ", " ": " ", " ": " ",
+    " ": " ", " ": " ", " ": " ", " ": " ",
     "\xad": None,  # lagy elvalasztojel: NFKC nem tavolitja el
 })
 

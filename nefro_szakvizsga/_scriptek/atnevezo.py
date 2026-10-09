@@ -106,13 +106,17 @@ K = {
 "KDIGO-TX":         ("03_kdigo/_pdf", ["kdigo", "transplant"], ["recipient", "living donor"], []),
 "KDIGO-ADPKD":      ("03_kdigo/_pdf", ["kdigo", "polycystic"], ["adpkd"], []),
 "KDIGO-LIPID":      ("03_kdigo/_pdf", ["kdigo", "lipid"], ["management"], []),
-# KDIGO - PRIORITAS 3 - Nemzetközi irányelv
 "KDIGO-CKD-2024": ("03_kdigo/_pdf", ["kdigo", "ckd", "evaluation", "management", "2024"], ["chronic kidney disease"], []),
 "KDIGO-DIABETES-2023": ("03_kdigo/_pdf", ["kdigo", "diabetes", "2023"], ["management", "ckd"], []),
 # EULAR / ISPD - PRIORITAS 3 - Nemzetközi irányelv
+"KDIGO-GN-2021": ("03_kdigo/_pdf", ["kdigo", "glomerular"], ["diseases", "2021"], ["anemia", "diabetes", "lipid", "blood pressure"]),
 "EULAR-ERA-LN-2023": ("03_kdigo/_pdf", ["eular", "era", "lupus", "nephritis"], ["2023"], []),
+"EULAR-ANCA-2023": ("03_kdigo/_pdf", ["eular", "anca"], ["vasculitis", "2023"], ["rituximab", "avacopan"]),
 "ISPD-PERITONITIS-2022": ("03_kdigo/_pdf", ["ispd", "peritonitis"], ["2022", "prevention", "treatment"], []),
 "ISPD-PRESCRIBING-2020": ("03_kdigo/_pdf", ["ispd", "peritoneal"], ["dialysis", "prescribing", "kt/v"], []),
+"KDIGO-TX-RECIPIENT": ("03_kdigo/_pdf", ["kdigo", "transplant", "recipient"], ["care"], []),
+"KDIGO-TX-DONOR": ("03_kdigo/_pdf", ["kdigo", "living", "kidney", "donor"], ["evaluation", "care"], []),
+"KDIGO-CKD-MBD-2017": ("03_kdigo/_pdf", ["kdigo", "ckd-mbd", "mineral"], ["bone", "2017"], []),
 
 "AJKD-CC-VASCULAR-ACCESS-2025": ("05_tankonyv_en/_pdf",
     ["core curriculum", "vascular access"], ["hemodialysis"], []),
