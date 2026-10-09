@@ -40,15 +40,16 @@ FORRAS_MAPPAK = _kozos.MD_MAPPAK
 # Idezojel-, kotojel- es szokoz-valtozatok egysegesitese.
 #
 # NEM sebessegi okbol translate (az valojaban kicsit lassabb, mint nehany
-# replace) - hanem a LEFEDETTSEG miatt: a PDF-bol kinyert szovegben eloforcul
+# replace) — hanem a LEFEDETTSEG miatt: a PDF-bol kinyert szovegben eloforul
 # a U+2010 kotojel, a nem-toro es a keskeny szokoz, a francia idezojel. Ezek
-# a regi listaban nem szerepeltek, es hamis "NINCS A FORRASBAN" talalatot
-# okoztak olyan idezeteknel, amik valojaban ott voltak.
+# nelkul hamis "NINCS A FORRASBAN" talalatot kapnank olyan idezeteknel,
+# amik valojaban ott vannak a forrasban.
 EGYSEGESIT = str.maketrans({
-    "„": '"', "”": '"', "“": '"', "»": '"', "«": '"',
-    "’": "'", "‘": "'", "´": "'",
-    "–": "-", "—": "-", "−": "-", "‐": "-", "‑": "-",
-    " ": " ", " ": " ", " ": " ", " ": " ",
+    "\u201e": '"', "\u201d": '"', "\u201c": '"', "\u00bb": '"', "\u00ab": '"',
+    "\u2019": "'", "\u2018": "'", "\u00b4": "'",
+    "\u2013": "-", "\u2014": "-", "\u2212": "-", "\u2010": "-", "\u2011": "-",
+    "\u00a0": " ", "\u2007": " ", "\u202f": " ", "\u2009": " ",
+    "\u00ad": None,  # lagy elvalasztojel: NFKC nem tavolitja el
 })
 
 

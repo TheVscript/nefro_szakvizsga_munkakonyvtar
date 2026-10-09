@@ -122,11 +122,11 @@ TOBB_SZOKOZ = re.compile(r"\s+")
 # nelkul hamis "NINCS A FORRASBAN" talalatot kapnank olyan idezeteknel,
 # amik valojaban ott vannak a forrasban.
 EGYSEGESIT = str.maketrans({
-    "„": '"', """: '"', """: '"', "»": '"', "«": '"',
-    "'": "'", "'": "'", "´": "'",
-    "–": "-", "—": "-", "−": "-", "‐": "-", "‑": "-",
-    " ": " ", " ": " ", " ": " ", " ": " ",
-    "\xad": None,  # lagy elvalasztojel: NFKC nem tavolitja el
+    "\u201e": '"', "\u201d": '"', "\u201c": '"', "\u00bb": '"', "\u00ab": '"',
+    "\u2019": "'", "\u2018": "'", "\u00b4": "'",
+    "\u2013": "-", "\u2014": "-", "\u2212": "-", "\u2010": "-", "\u2011": "-",
+    "\u00a0": " ", "\u2007": " ", "\u202f": " ", "\u2009": " ",
+    "\u00ad": None,  # lagy elvalasztojel: NFKC nem tavolitja el
 })
 
 
