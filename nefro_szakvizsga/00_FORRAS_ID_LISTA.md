@@ -107,18 +107,38 @@
 
 ezeket már beraktam az átnevezőbe, úgyhogy ha oda töltöd le ezeket a fieloakt autóamituksan elhelyezi a megfelelő heylre
 
-## 1. Letöltési és elnevezési jegyzék (Mapping)
+### Teljes kiegészítő forráslista és elhelyezési útmutató (II. Forrásaudit)
 
-Mindegyik dokumentum **PRIORITÁS 3 – Nemzetközi irányelv**, ezért egységesen a `03_kdigo/_pdf/` mappába kerül.
+Ez a jegyzék a nefrológiai szakvizsga felkészüléshez szükséges összes modern nemzetközi irányelvet és konszenzust tartalmazza, kiegészítve a hiányzó témaköröket (DKD, Glomerulopátiák, ANCA, Lupus, PD, TX, CKD-MBD).
 
-| Dokumentum neve | Hivatalos elérhetőség / Keresés | Célmappa | Kötelező `forras_id` (Fájlnév) | Érintett tételek | Cél NotebookLM füzet |
-|---|---|---|---|:---:|---|
-| **EULAR / ERA Lupus Nephritis Guideline (2023 Update)** | [PubMed Central / ARD](https://ard.bmj.com/content/83/1/15)<br>*Cím: „Joint EULAR/ERA recommendations for the management of lupus nephritis: 2023 update”* | `03_kdigo/_pdf/` | `EULAR-ERA-LN-2023.pdf` | **15** | `30 – Glomerulopátiák, immunológia` |
-| **ISPD Peritonitis Guideline (2022 Update)** | [ispd.org/guidelines](https://ispd.org/guidelines/)<br>*Cím: „ISPD peritonitis guideline recommendations: 2022 update on prevention and treatment”* | `03_kdigo/_pdf/` | `ISPD-PERITONITIS-2022.pdf` | **60, 61** | `100 – Vesepótló kezelés` |
-| **ISPD High-Quality PD Prescribing (2020)** | [ispd.org/guidelines](https://ispd.org/guidelines/)<br>*Cím: „Creating high-quality peritoneal dialysis prescriptions: The role of Kt/V and beyond”* | `03_kdigo/_pdf/` | `ISPD-PRESCRIBING-2020.pdf` | **60, 61** | `100 – Vesepótló kezelés` |
-| **KDIGO 2024 CKD Guideline** | [kdigo.org/guidelines](https://kdigo.org/guidelines/ckd-evaluation-and-management/)<br>*Cím: „KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease”* | `03_kdigo/_pdf/` | `KDIGO-CKD-2024.pdf` | **1–3, 45–49** | `90 – CKD és szövődményei` |
-| **KDIGO 2023 / 2022 Diabetes in CKD** | [kdigo.org/guidelines](https://kdigo.org/guidelines/diabetes-ckd/)<br>*Cím: „KDIGO 2023 Clinical Practice Guideline for Diabetes Management in CKD”* | `03_kdigo/_pdf/` | `KDIGO-DIABETES-2023.pdf` | **19, 20** | `40 – Diabétesz, hypertonia` |
+Minden dokumentum **PRIORITÁS 3 – Nemzetközi irányelv**, ezért egységesen a `nefro_szakvizsga/03_kdigo/_pdf/` mappába kerül.
 
+---
+
+#### 1. Letöltési, elnevezési és mapping táblázat
+
+| # | Témakör / Dokumentum | Hivatalos elérhetőség / Keresés | Célmappa | Kötelező `forras_id` (Fájlnév) | Érintett tételek | Cél NotebookLM füzet |
+|---|---|---|---|---|:---:|---|
+| **1.** | **KDIGO 2023 Diabetes Management in CKD** *(4 pillér: RASi, SGLT2i, Finerenon, GLP-1 RA)* | [kdigo.org/guidelines/diabetes-ckd/](https://kdigo.org/guidelines/diabetes-ckd/)<br>*Cím: „KDIGO 2023 Clinical Practice Guideline for Diabetes Management in CKD”* | `03_kdigo/_pdf/` | `KDIGO-DIABETES-2023.pdf` | **19, 20** | `40 – Diabétesz, hypertonia` |
+| **2a.** | **KDIGO 2021 Glomerular Diseases Guideline** *(MN rituximab, IgAN szupportív és modern kezelés)* | [kdigo.org/guidelines/gd/](https://kdigo.org/guidelines/gd/)<br>*Cím: „KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases”* | `03_kdigo/_pdf/` | `KDIGO-GN-2021.pdf` | **9–13, 16–18** | `30 – Glomerulopátiák, immunológia` |
+| **2b.** | **EULAR / ERA Lupus Nephritis Guideline (2023 Update)** *(MMF + szteroid + Belimumab / Voclosporin)* | [PubMed Central / ARD](https://ard.bmj.com/content/83/1/15)<br>*Cím: „Joint EULAR/ERA recommendations for the management of lupus nephritis: 2023 update”* | `03_kdigo/_pdf/` | `EULAR-ERA-LN-2023.pdf` | **15** | `30 – Glomerulopátiák, immunológia` |
+| **2c.** | **EULAR ANCA-Associated Vasculitis Guideline (2022/2023 Update)** *(Avacopan, Rituximab indukció)* | [ARD / EULAR](https://ard.bmj.com/content/early/2023/03/15/ard-2022-223764)<br>*Cím: „EULAR recommendations for the management of ANCA-associated vasculitis: 2022 update”* | `03_kdigo/_pdf/` | `EULAR-ANCA-2023.pdf` | **14** | `30 – Glomerulopátiák, immunológia` |
+| **3a.** | **ISPD Peritonitis Guideline: 2022 Update** *(Peritonitis prevenció, kezelés, katétereltávolítás)* | [ispd.org/guidelines](https://ispd.org/guidelines/)<br>*Cím: „ISPD peritonitis guideline recommendations: 2022 update on prevention and treatment”* | `03_kdigo/_pdf/` | `ISPD-PERITONITIS-2022.pdf` | **60, 61** | `100 – Vesepótló kezelés` |
+| **3b.** | **ISPD High-Quality PD Prescribing (2020)** *(Betegcentrikus célok a merev Kt/V helyett)* | [ispd.org/guidelines](https://ispd.org/guidelines/)<br>*Cím: „Creating high-quality peritoneal dialysis prescriptions: The role of Kt/V and beyond”* | `03_kdigo/_pdf/` | `ISPD-PRESCRIBING-2020.pdf` | **60, 61** | `100 – Vesepótló kezelés` |
+| **4a.** | **KDIGO Kidney Transplant Recipient Guideline** *(Transzplantált recipiens modern gondozása)* | [kdigo.org/guidelines/kt/](https://kdigo.org/guidelines/kt/)<br>*Cím: „KDIGO Clinical Practice Guideline for the Care of Kidney Transplant Recipients”* | `03_kdigo/_pdf/` | `KDIGO-TX-RECIPIENT.pdf` | **63, 66–70** | `110 – Transzplantáció` |
+| **4b.** | **KDIGO Living Kidney Donor Guideline** *(Élődonor kivizsgálása és gondozása)* | [kdigo.org/guidelines/living-kidney-donor/](https://kdigo.org/guidelines/living-kidney-donor/)<br>*Cím: „KDIGO Clinical Practice Guideline on the Evaluation and Care of Living Kidney Donors”* | `03_kdigo/_pdf/` | `KDIGO-TX-DONOR.pdf` | **64, 65** | `110 – Transzplantáció` |
+| **5.** | **KDIGO 2017 CKD-MBD Guideline Update** *(Ca-mentes foszfátkötők, PTH 2–9× tartomány, kalcimimetikumok)* | [kdigo.org/guidelines/ckd-mbd/](https://kdigo.org/guidelines/ckd-mbd/)<br>*Cím: „KDIGO 2017 Clinical Practice Guideline Update for the Diagnosis, Evaluation, Prevention, and Treatment of CKD-MBD”* | `03_kdigo/_pdf/` | `KDIGO-CKD-MBD-2017.pdf` | **7, 53** | `90 – CKD és szövődményei` |
+| **+** | **KDIGO 2024 CKD Guideline** *(A modern alapirányelv a progresszióhoz és stádiumokhoz)* | [kdigo.org/guidelines/ckd-evaluation-and-management/](https://kdigo.org/guidelines/ckd-evaluation-and-management/)<br>*Cím: „KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease”* | `03_kdigo/_pdf/` | `KDIGO-CKD-2024.pdf` | **1–3, 45–49** | `90 – CKD és szövődményei` |
+
+---
+
+## 2. A folyamat lépései a letöltés után
+
+### 1️⃣ Lépés: Helyi mentés és horgonyozás
+1. Töltsd le a PDF-eket közvetlenül a megadott fájlnévvel a `nefro_szakvizsga/03_kdigo/_pdf/` mappába.
+2. Futtasd le a terminálban:
+   ```powershell
+   python _scriptek\pdf_horgonnyal.py
 ---
 
 ## 2. A generáló finomhangolása letöltés után (3 lépésben)
