@@ -43,6 +43,20 @@ K = {
     ["emberi eroforrasok", "2021"], []),
 "TTP-HUS-IRANYELV-BM-2026": ("01_iranyelv_hu/_pdf",
     ["thromboticus", "purpura"], ["haemolyticus", "uraemias"], []),
+ "HYPONATRAEMIA-UTMUTATO-2015": (
+        "02_manet_tarsasag/_pdf",
+        ["hyponatraemia"],
+        ["diagnosztikajanak", "kezelesenek", "gyakorlati", "utmutatoja"],
+        [],
+    ),
+"VESEKOBETEGSEG-MANET-2012": (
+    "02_manet_tarsasag/_pdf",
+    ["vesekobetegseg", "belgyogyaszati"],
+    ["kivizsgalasara", "kezelesere", "2012"],
+    [],
+),
+
+    
 "HYPONATRAEMIA-IRANYELV": ("01_iranyelv_hu/_pdf",
     ["hyponatraemia"], ["diagnosztika", "kezeles"], []),
 

@@ -87,6 +87,13 @@ A webes PDF-ek neve **dátumos**: `NJT-EUTV-1997-CLIV-2026-10-08`. Ezek pillanat
 - [ ] **HTML-oldalak PDF-be nyomtatva** *(jogszabály, online fejezet)* — `Ctrl+P` → Mentés PDF-ként, **fejléc/lábléc KI**, 100%, és előbb **nyisd ki a lenyíló részeket**
 - [ ] A webes PDF-ek **dátumos néven** mentve *(`NJT-EUTV-1997-CLIV-2026-10-08`)*, egyből a cél `_pdf\` mappába
 
+| Kész | Dokumentum pontos címe a doki.net-en | Dátum a listában | Célmappa | Kötelező `forras_id` (Fájlnév) | Tétel | Cél NotebookLM füzet |
+|:---:|---|:---:|---|---|:---:|---|
+| [ ] | **A hyponatraemia diagnosztikájának és kezelésének gyakorlati útmutatója** | 2015.07.02. | `02_manet_tarsasag/_pdf/` | `HYPONATRAEMIA-UTMUTATO-2015.pdf` | **5** | `20 – Víz-, elektrolit- és sav-bázis háztartás` |
+| [ ] | **Ajánlás a vesekőbetegség belgyógyászati kivizsgálására és kezelésére** | 2012.02.14. | `02_manet_tarsasag/_pdf/` | `VESEKOBETEGSEG-MANET-2012.pdf` | **33** | `60 – Fertőzés, kő, obstrukció, interstitialis` |
+
+
+
 > **Minden letöltés után nyisd meg a PDF-et.** Harminc másodperc. Egy bejelentkező oldal is érvényes PDF, szövegréteggel — **ezt egyetlen szkript sem tudja eldönteni helyetted.**
 
 ---
