@@ -20,7 +20,7 @@ from __future__ import annotations
 
 import pathlib, sys, re, unicodedata, shutil
 
-from _kozos import GYOKER, PAROK, ARCHIV_PDF, ARCHIV_MD, pymupdf_betolt
+from _kozos import GYOKER, PAROK, ARCHIV_PDF, ARCHIV_MD, KDIGO_FORRASOK, pymupdf_betolt
 
 fitz = pymupdf_betolt()
 
@@ -106,6 +106,13 @@ K = {
 "KDIGO-TX":         ("03_kdigo/_pdf", ["kdigo", "transplant"], ["recipient", "living donor"], []),
 "KDIGO-ADPKD":      ("03_kdigo/_pdf", ["kdigo", "polycystic"], ["adpkd"], []),
 "KDIGO-LIPID":      ("03_kdigo/_pdf", ["kdigo", "lipid"], ["management"], []),
+# KDIGO - PRIORITAS 3 - Nemzetközi irányelv
+"KDIGO-CKD-2024": ("03_kdigo/_pdf", ["kdigo", "ckd", "evaluation", "management", "2024"], ["chronic kidney disease"], []),
+"KDIGO-DIABETES-2023": ("03_kdigo/_pdf", ["kdigo", "diabetes", "2023"], ["management", "ckd"], []),
+# EULAR / ISPD - PRIORITAS 3 - Nemzetközi irányelv
+"EULAR-ERA-LN-2023": ("03_kdigo/_pdf", ["eular", "era", "lupus", "nephritis"], ["2023"], []),
+"ISPD-PERITONITIS-2022": ("03_kdigo/_pdf", ["ispd", "peritonitis"], ["2022", "prevention", "treatment"], []),
+"ISPD-PRESCRIBING-2020": ("03_kdigo/_pdf", ["ispd", "peritoneal"], ["dialysis", "prescribing", "kt/v"], []),
 
 "AJKD-CC-VASCULAR-ACCESS-2025": ("05_tankonyv_en/_pdf",
     ["core curriculum", "vascular access"], ["hemodialysis"], []),

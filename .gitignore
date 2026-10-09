@@ -25,11 +25,10 @@ venv/
 .~lock.*#
 
 # Large downloaded sources (folder README.md files stay tracked)
-# *.pdf
 *.zip
 *.rar
 *.7z
-nefro_szakvizsga/_letoltve/*
+# nefro_szakvizsga/_letoltve/*
 !nefro_szakvizsga/_letoltve/README.md
 
 # Logs / temp

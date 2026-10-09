@@ -51,6 +51,16 @@ BLOKKOK: list[tuple[str, str, str]] = [
 ARCHIV_PDF = "../_ARCHIV_LEJART/_pdf"
 ARCHIV_MD = "../_ARCHIV_LEJART/md"
 
+# KDIGO és AJKD CC dokumentumok — PRIORITÁS 3 – Nemzetközi irányelv
+KDIGO_PDF = "03_kdigo/_pdf"
+KDIGO_FORRASOK = {
+    "EULAR-ERA-LN-2023": (KDIGO_PDF, "EULAR-ERA-LN-2023.pdf"),
+    "ISPD-PERITONITIS-2022": (KDIGO_PDF, "ISPD-PERITONITIS-2022.pdf"),
+    "ISPD-PRESCRIBING-2020": (KDIGO_PDF, "ISPD-PRESCRIBING-2020.pdf"),
+    "KDIGO-CKD-2024": (KDIGO_PDF, "KDIGO-CKD-2024.pdf"),
+    "KDIGO-DIABETES-2023": (KDIGO_PDF, "KDIGO-DIABETES-2023.pdf"),
+}
+
 
 def _ut(blokk: str, al: str) -> str:
     return f"{blokk}/{al}" if al else blokk
