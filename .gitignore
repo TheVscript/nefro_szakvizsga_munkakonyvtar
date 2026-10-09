@@ -1,0 +1,38 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.idea/
+*.swp
+*~
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Office temp files
+~$*
+.~lock.*#
+
+# Large downloaded sources (folder README.md files stay tracked)
+# *.pdf
+*.zip
+*.rar
+*.7z
+nefro_szakvizsga/_letoltve/*
+!nefro_szakvizsga/_letoltve/README.md
+
+# Logs / temp
+*.log
+*.tmp
+*.bak
