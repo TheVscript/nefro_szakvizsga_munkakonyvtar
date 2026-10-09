@@ -20,7 +20,7 @@ from __future__ import annotations
 
 import pathlib, sys, re, unicodedata, shutil
 
-from _kozos import pymupdf_betolt
+from _kozos import GYOKER, PAROK, ARCHIV_PDF, ARCHIV_MD, pymupdf_betolt
 
 fitz = pymupdf_betolt()
 
@@ -38,7 +38,7 @@ K = {
 "CKD-IRANYELV-BM-2025-SUPPL": ("01_iranyelv_hu/_pdf",
     ["idult vesebetegseg", "diagnozisarol"],
     ["supplementum", "hypertonia es nephrologia"], ["emberi eroforrasok"]),
-"CKD-IRANYELV-EMMI-2021-LEJART": ("../_ARCHIV_LEJART/_pdf",
+"CKD-IRANYELV-EMMI-2021-LEJART": (ARCHIV_PDF,
     ["idult vesebetegseg", "diagnozisa"],
     ["emberi eroforrasok", "2021"], []),
 "TTP-HUS-IRANYELV-BM-2026": ("01_iranyelv_hu/_pdf",
