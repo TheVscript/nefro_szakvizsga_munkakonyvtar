@@ -79,15 +79,33 @@ def idezet_megvan(idezet: str, horgony: str, forrasok: dict) -> str | None:
 
 def ellenoriz(csv_ut: pathlib.Path, forrasok: dict) -> int:
     gond = 0
+    # 1. Elválasztójel automatikus detektálása az Anki vezérlősorból
+    delimiter = ";"
     with open(csv_ut, encoding="utf-8") as f:
-        for i, sor in enumerate(csv.reader(f, delimiter=";"), start=1):
+        for _ in range(5):
+            sor = f.readline()
+            if sor.lower().startswith("#separator:tab"):
+                delimiter = "\t"
+                break
+            elif sor.lower().startswith("#separator:semicolon"):
+                delimiter = ";"
+                break
+
+    # 2. Beolvasás és szigorú mezőszám-ellenőrzés (pontosan 7 oszlop)
+    with open(csv_ut, encoding="utf-8") as f:
+        reader = csv.reader(f, delimiter=delimiter)
+        for i, sor in enumerate(reader, start=1):
             if not sor or sor[0].startswith("#") or sor[0] == "Kerdes":
                 continue
-            if len(sor) < 7:
-                print(f"  {i:4d}  HIBAS SOR: {len(sor)} oszlop, 7 kellene "
-                      f"(Kerdes;Valasz;Horgony;Idezet;Tetel;Statusz;Tagek)")
+
+            # Se kevesebb (< 7), se több (> 7) nem lehet!
+            if len(sor) != 7:
+                print(f"  {i:4d}  HIBAS MEZOSZAM: {len(sor)} oszlop, pontosan 7 kellene!")
+                print(f"        Valószínűleg idézőjel nélküli elválasztójel ({delimiter!r}) van a szövegben.")
+                print(f"        Sor eleje: {sor[0][:60]}...")
                 gond += 1
                 continue
+
             kerdes, valasz, horgony, idezet = sor[0], sor[1], sor[2], sor[3]
 
             if (h := hianyzo_szamok(valasz, idezet)):
