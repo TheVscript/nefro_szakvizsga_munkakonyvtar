@@ -7,20 +7,7 @@
 
 > **Ne a 70 tételt akard meg a hétvégén.** Egy teljes kör megmutatja, mi nem működik — és akkor még egy tételen kell javítani, nem hetvenen.
 
----
-
-### ✅ Amivel nincs dolgod — már át van vezetve
-
-| | Mi volt a baj |
-|---|---|
-| 🔴 **Az `00_INDEX.md` a RÉGI szerkezetet dokumentálta** | `lejart/` almappaként a csatolt mappán **belül** — pontosan az, ami ellen az egész rendszer épült. Ha eszerint építed fel, a lejárt irányelv egy fájlolvasásnyira van. Újraírva |
-| **Notebook-névütközés** | `90 – CKD` és `90 – Saját` ugyanazzal a számmal → **`95 – Saját, ELLENŐRZÖTT`**, mind a 70 forráslapon |
-| **Anki-mezőütközés** | A CSV most **7 oszlopos** (`…;Tetel;Statusz;Tagek`), `#tags column:7`. Enélkül a piros **NYERS** jelzés soha nem jelent volna meg |
-| **`pdf_horgonnyal.py` kihagyta az archívumot** | Javítva: külön szakaszban feldolgozza, és hangos figyelmeztetést ír |
-| **Az átvitel modellen ment át** | Most **te** mented a NotebookLM kimenetét fájlba. Így a forrás nem romolhat el, mielőtt bármi ellenőrizné |
-| **Jogszabály-hivatkozás** | **Kettős lett:** `[NJT-EUTV-... \| p.012 \| 12. § (3)]` — az oldalszám teszi géppel ellenőrizhetővé, a § az, amit a vizsgán mondasz |
-| **Elavult hivatkozások** | `python3` → `python` (Windows), rossz tételsor-fájlnév, megszűnt `hatalyos/` mappa a tesztleírásban |
-
+-
 ### 🔧 Hibajavító kör — 20 javított hiba
 
 A szkriptekben **négy olyan hiba volt, ami csendben átengedett volna rossz kártyát**:
@@ -72,19 +59,19 @@ A webes PDF-ek neve **dátumos**: `NJT-EUTV-1997-CLIV-2026-10-08`. Ezek pillanat
 
 > A tételsor **már a ZIP-ben van**, ezt nem kell beszerezned.
 
-- [ ] `00_LETOLTESI_TERV.md` megnyitva — **forrásoldal szerint haladj, ne tételenként**
-- [ ] MANET irányelv-oldal (~40 perc) — *a „Lejárt a biztonsági időkorlát" üzenet a lap tetején **nem hiba**, görgess tovább*
-- [ ] KDIGO gyűjtőoldal (~20 perc)
-- [ ] AJKD Core Curriculum (~20 perc) — csak a tételekhez tartozókat
-- [ ] 🔴 **A 8 vakfolt-tétel fallback-forrásai** *(6, 8, 28–32, 39)* — `00_FORRAS_ID_LISTA.md` → „KÖTELEZŐ FALLBACK". **Most, nem a végén.** Ahol nincs illő AJKD-cikk, oda a tankönyvi fejezet kerül a listára.
-- [ ] Közvetlen linkek (~10 perc): hyponatraemia, MHT 2025, MaNET 2023
-- [ ] **HTML-oldalak PDF-be nyomtatva** *(jogszabály, online fejezet)* — `Ctrl+P` → Mentés PDF-ként, **fejléc/lábléc KI**, 100%, és előbb **nyisd ki a lenyíló részeket**
-- [ ] A webes PDF-ek **dátumos néven** mentve *(`NJT-EUTV-1997-CLIV-2026-10-08`)*, egyből a cél `_pdf\` mappába
+- [x] `00_LETOLTESI_TERV.md` megnyitva — **forrásoldal szerint haladj, ne tételenként**
+- [x] MANET irányelv-oldal (~40 perc) — *a „Lejárt a biztonsági időkorlát" üzenet a lap tetején **nem hiba**, görgess tovább*
+- [x] KDIGO gyűjtőoldal (~20 perc)
+- [x] AJKD Core Curriculum (~20 perc) — csak a tételekhez tartozókat
+- [x] 🔴 **A 8 vakfolt-tétel fallback-forrásai** *(6, 8, 28–32, 39)* — `00_FORRAS_ID_LISTA.md` → „KÖTELEZŐ FALLBACK". **Most, nem a végén.** Ahol nincs illő AJKD-cikk, oda a tankönyvi fejezet kerül a listára.
+- [x] Közvetlen linkek (~10 perc): hyponatraemia, MHT 2025, MaNET 2023
+- [x] **HTML-oldalak PDF-be nyomtatva** *(jogszabály, online fejezet)* — `Ctrl+P` → Mentés PDF-ként, **fejléc/lábléc KI**, 100%, és előbb **nyisd ki a lenyíló részeket**
+- [ ] SKIPPED -A webes PDF-ek **dátumos néven** mentve *(`NJT-EUTV-1997-CLIV-2026-10-08`)*, egyből a cél `_pdf\` mappába
 
 | Kész | Dokumentum pontos címe a doki.net-en | Dátum a listában | Célmappa | Kötelező `forras_id` (Fájlnév) | Tétel | Cél NotebookLM füzet |
 |:---:|---|:---:|---|---|:---:|---|
-| [ ] | **A hyponatraemia diagnosztikájának és kezelésének gyakorlati útmutatója** | 2015.07.02. | `02_manet_tarsasag/_pdf/` | `HYPONATRAEMIA-UTMUTATO-2015.pdf` | **5** | `20 – Víz-, elektrolit- és sav-bázis háztartás` |
-| [ ] | **Ajánlás a vesekőbetegség belgyógyászati kivizsgálására és kezelésére** | 2012.02.14. | `02_manet_tarsasag/_pdf/` | `VESEKOBETEGSEG-MANET-2012.pdf` | **33** | `60 – Fertőzés, kő, obstrukció, interstitialis` |
+| [ ] SKIPPED | **A hyponatraemia diagnosztikájának és kezelésének gyakorlati útmutatója** | 2015.07.02. | `02_manet_tarsasag/_pdf/` | `HYPONATRAEMIA-UTMUTATO-2015.pdf` | **5** | `20 – Víz-, elektrolit- és sav-bázis háztartás` |
+| [ ] SKIPPED | **Ajánlás a vesekőbetegség belgyógyászati kivizsgálására és kezelésére** | 2012.02.14. | `02_manet_tarsasag/_pdf/` | `VESEKOBETEGSEG-MANET-2012.pdf` | **33** | `60 – Fertőzés, kő, obstrukció, interstitialis` |
 
 
 
