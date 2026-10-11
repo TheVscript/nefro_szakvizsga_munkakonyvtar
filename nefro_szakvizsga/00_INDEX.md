@@ -12,6 +12,7 @@
 >
 > Itt a mappaszerkezet, a szkriptek és a haladáskövető tábla van.
 
+
 ---
 
 ## Mappaszerkezet
