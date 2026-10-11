@@ -55,6 +55,8 @@ K = {
     ["kivizsgalasara", "kezelesere", "2012"],
     [],
 ),
+"MDT-DIABETES-IRANYELV-2023": ("02_manet_tarsasag/_pdf",
+    ["diabetes"], ["diabetologia hungarica", "2023", "kezelesi"], []),
 
     
 "HYPONATRAEMIA-IRANYELV": ("01_iranyelv_hu/_pdf",
@@ -122,8 +124,6 @@ K = {
     ["nephrogen", "fibrosis"], ["mr kontrasztanyag", "szisztemas"], []),
 "GYOGYSZERDOZIS-CKD-2012": ("02_manet_tarsasag/_pdf",
     ["gyogyszerek", "adagolas"], ["vesefunkcio"], []),
-"VESEKO-MANET-2012": ("02_manet_tarsasag/_pdf",
-    ["vesekobetegseg"], ["belgyogyaszati"], []),
 "CKD-MBD-MANET-2012": ("02_manet_tarsasag/_pdf",
     ["csont", "asvanyi"], ["anyagcsere zavar"], []),
 "ERBP-TX-2013": ("02_manet_tarsasag/_pdf",
