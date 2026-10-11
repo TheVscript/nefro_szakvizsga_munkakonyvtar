@@ -9,12 +9,6 @@
 
 ---
 
-## Mi változott ebben a ZIP-ben (v5.0)
-
-A módszertani dokumentum **teljesen újraírva** `MODSZERTAN_v5.0.md` néven — minden módosítás a helyére beépítve, nem külön szekcióban.
-
-**A v5.0 ezen felül:** a szkriptek közös része egy fájlba került (`_scriptek/_kozos.py`), és a promptok szó szerinti szövege már csak a `00_PROMPTOK.md`-ben van. **A szkriptek ki- és bemenete változatlan** — 118 soros regressziós diffel ellenőrizve, nulla eltérés.
-
 ### ✅ Amivel nincs dolgod — már át van vezetve
 
 | | Mi volt a baj |
