@@ -97,9 +97,8 @@ K = {
     # 4. AJKD Core Curriculum Hematuria (2. tételhez)
     "AJKD-CC-HEMATURIA-2026": ("05_tankonyv_en/_pdf",
         ["core curriculum", "hematuria"], ["approach"], []),
-
 "MHT-HT-IRANYELV-2025": ("02_manet_tarsasag/_pdf",
-    ["magasvernyomas"], ["2025", "gyakorlati iranyelv"], []),
+    ["magasvernyomas"], ["2025", "szakmai iranyelv"], []),
 "MANET-MHT-HT-2023": ("02_manet_tarsasag/_pdf",
     ["hypertonia"], ["2023", "supplementum"], ["magasvernyomas-betegseg ellatasarol"]),
 "VESEBIOPSZIA-MANET-2025": ("02_manet_tarsasag/_pdf",
