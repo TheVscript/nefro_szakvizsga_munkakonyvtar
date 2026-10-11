@@ -78,6 +78,24 @@ K = {
     "DIALIZIS-UTMUTATO-MANET-2016-LEJART": (ARCHIV_PDF,
         ["dializiskezeles"], ["korszeru", "utmutato", "2016"], []),
 
+    # 1. Albuminuria/eGFR labor vizsgálatok (uACR / laboratórium variációk)
+    "ALBUMINURIA-EGFR-LABOR-2025": ("02_manet_tarsasag/_pdf",
+        ["egfr"], ["laboratorium", "allasfoglalas", "uacr", "upcr", "albuminuria"], ["szurese"]),
+
+    # 2. KDIGO 2021 Blood Pressure: Full és Executive szétválasztása (nincs ütközés!)
+    "KDIGO-BP-2021-EXEC": ("03_kdigo/_pdf",
+        ["kdigo", "blood pressure"], ["executive", "summary", "2021"], []),
+    "KDIGO-BP-2021": ("03_kdigo/_pdf",
+        ["kdigo", "blood pressure"], ["management", "2021"], ["executive summary"]),
+
+    # 3. EULAR Lupus (ha SLE vagy Lupus Nephritis címváltozat van)
+    "EULAR-ERA-LN-2023": ("03_kdigo/_pdf",
+        ["eular", "lupus"], ["erythematosus", "nephritis", "2023"], []),
+
+    # 4. AJKD Core Curriculum Hematuria (2. tételhez)
+    "AJKD-CC-HEMATURIA-2026": ("05_tankonyv_en/_pdf",
+        ["core curriculum", "hematuria"], ["approach"], []),
+
 "MHT-HT-IRANYELV-2025": ("02_manet_tarsasag/_pdf",
     ["magasvernyomas"], ["2025", "gyakorlati iranyelv"], []),
 "MANET-MHT-HT-2023": ("02_manet_tarsasag/_pdf",
@@ -92,8 +110,6 @@ K = {
     ["sglt", "haziorvos"], ["ellenorzo lista", "t2dm"], []),
 "LIPID-CKD-MANET-2024": ("02_manet_tarsasag/_pdf",
     ["lipidcsokkento"], ["idult vesebetegseg"], []),
-"ALBUMINURIA-EGFR-LABOR-2025": ("02_manet_tarsasag/_pdf",
-    ["albuminuria", "egfr"], ["laboratorium", "allasfoglalas"], ["szurese"]),
 "BEUTALAS-HAZIORVOS-2024": ("02_manet_tarsasag/_pdf",
     ["vesebetegsegre", "nephrologushoz"], ["mikor"], []),
 "ALBUMINURIA-SZURES-2012": ("02_manet_tarsasag/_pdf",
@@ -126,7 +142,6 @@ K = {
                       ["evaluation", "management"], ["anemia", "diabetes", "lipid", "blood pressure"]),
 "KDIGO-GN":         ("03_kdigo/_pdf", ["kdigo", "glomerular"], ["diseases"], []),
 "KDIGO-DIABETES":   ("03_kdigo/_pdf", ["kdigo", "diabetes"], ["management"], []),
-"KDIGO-BP-2021":    ("03_kdigo/_pdf", ["kdigo", "blood pressure"], ["management"], []),
 "KDIGO-AKI":        ("03_kdigo/_pdf", ["kdigo", "acute kidney injury"], [], []),
 "KDIGO-CKD-MBD":    ("03_kdigo/_pdf", ["kdigo", "mineral and bone"], ["ckd-mbd"], []),
 "KDIGO-TX":         ("03_kdigo/_pdf", ["kdigo", "transplant"], ["recipient", "living donor"], []),
@@ -136,7 +151,6 @@ K = {
 "KDIGO-DIABETES-2023": ("03_kdigo/_pdf", ["kdigo", "diabetes", "2023"], ["management", "ckd"], []),
 # EULAR / ISPD - PRIORITAS 3 - Nemzetközi irányelv
 "KDIGO-GN-2021": ("03_kdigo/_pdf", ["kdigo", "glomerular"], ["diseases", "2021"], []),
-"EULAR-ERA-LN-2023": ("03_kdigo/_pdf", ["eular", "era", "lupus", "nephritis"], ["2023"], []),
 "EULAR-ANCA-2023": ("03_kdigo/_pdf", ["eular", "anca"], ["vasculitis", "2023"], ["rituximab", "avacopan"]),
 "ISPD-PERITONITIS-2022": ("03_kdigo/_pdf", ["ispd", "peritonitis"], ["2022", "prevention", "treatment"], []),
 "ISPD-PRESCRIBING-2020": ("03_kdigo/_pdf", ["ispd", "peritoneal"], ["dialysis", "prescribing", "kt/v"], []),
