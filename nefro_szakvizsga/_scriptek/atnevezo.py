@@ -60,6 +60,24 @@ K = {
 "HYPONATRAEMIA-IRANYELV": ("01_iranyelv_hu/_pdf",
     ["hyponatraemia"], ["diagnosztika", "kezeles"], []),
 
+    # 1. Vesebetegség terhei / etika (Kidney Int. 2019 - 56. tételhez)
+    "VESEBETEGSEG-TERHEI-MANET-2019": ("02_manet_tarsasag/_pdf",
+        ["vesebetegseg", "terhek"], ["egyenlotlensegei", "kidney international"], []),
+
+    # 2. Kardiovaszkuláris konszenzus javítása (c és sz variációk kezelése)
+    "MANET-KV-KONSZENZUS-2020": ("02_manet_tarsasag/_pdf",
+        ["konszenzus"], ["kardiovascularis", "kardiovaszkularis", "2020"], []),
+
+    # 3. RAS-gátlás javítása (z-s és s-es alak is)
+    "RAS-GATLAS-CKD-2012": ("02_manet_tarsasag/_pdf",
+        ["aldoszteron"], ["angiotenzin", "angiotensin", "renin", "receptor blokkolo"], []),
+        
+    # 4. Dialízis útmutató szétválasztása (hogy a 2016-ost ne nevezze át 2021-re)
+    "DIALIZIS-UTMUTATO-MANET-2021": ("02_manet_tarsasag/_pdf",
+        ["dializiskezeles"], ["korszeru", "utmutato", "2021"], ["2016"]),
+    "DIALIZIS-UTMUTATO-MANET-2016-LEJART": (ARCHIV_PDF,
+        ["dializiskezeles"], ["korszeru", "utmutato", "2016"], []),
+
 "MHT-HT-IRANYELV-2025": ("02_manet_tarsasag/_pdf",
     ["magasvernyomas"], ["2025", "gyakorlati iranyelv"], []),
 "MANET-MHT-HT-2023": ("02_manet_tarsasag/_pdf",
@@ -80,8 +98,6 @@ K = {
     ["vesebetegsegre", "nephrologushoz"], ["mikor"], []),
 "ALBUMINURIA-SZURES-2012": ("02_manet_tarsasag/_pdf",
     ["albuminuria", "proteinuria", "haematuria"], ["szurese"], []),
-"DIALIZIS-UTMUTATO-MANET-2021": ("02_manet_tarsasag/_pdf",
-    ["dializiskezeles"], ["korszeru", "utmutato"], []),
 "KONTRASZT-NEPHROPATHIA-2022": ("02_manet_tarsasag/_pdf",
     ["kontrasztanyag", "vesekarosodas"], ["orvosi hetilap", "megelozese"], ["allasfoglalas"]),
 "KONTRASZT-ALLASFOGLALAS-2012": ("02_manet_tarsasag/_pdf",
@@ -90,8 +106,6 @@ K = {
     ["nephrogen", "fibrosis"], ["mr kontrasztanyag", "szisztemas"], []),
 "GYOGYSZERDOZIS-CKD-2012": ("02_manet_tarsasag/_pdf",
     ["gyogyszerek", "adagolas"], ["vesefunkcio"], []),
-"RAS-GATLAS-CKD-2012": ("02_manet_tarsasag/_pdf",
-    ["angiotensin"], ["konvertalo", "receptor blokkolo"], []),
 "VESEKO-MANET-2012": ("02_manet_tarsasag/_pdf",
     ["vesekobetegseg"], ["belgyogyaszati"], []),
 "CKD-MBD-MANET-2012": ("02_manet_tarsasag/_pdf",
@@ -102,8 +116,6 @@ K = {
     ["szamitott gfr"], ["feherjevizeles", "beosztasa"], []),
 "DM-CKD3B-2016": ("02_manet_tarsasag/_pdf",
     ["cukorbetegek"], ["3b", "vesekarosodas"], []),
-"MANET-KV-KONSZENZUS-2020": ("02_manet_tarsasag/_pdf",
-    ["kardiovascularis", "konszenzus"], ["2020"], []),
 "NEPHRO-BEUTALAS-2009": ("02_manet_tarsasag/_pdf",
     ["beutalas"], ["javallatai", "kisero informacio"], []),
 "METFORMIN-CKD-2012": ("02_manet_tarsasag/_pdf",
