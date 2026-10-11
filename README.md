@@ -34,7 +34,7 @@ Munkakönyvtár a **magyar nefrológiai szakvizsgára** való felkészüléshez,
 | # | Fájl | Mire |
 |---|---|---|
 | **1** | **`00_ELSO_HETVEGE_CHECKLIST.md`** | **Innen indulj.** Pipálható lista az első hétvégére. Nyomtasd ki |
-| **2** | **`00_PARANCSOK_WINDOWS11.md`** | A pontos parancsok sorrendben, `D:\Szakvizsga` gyökérrel. Mellé tartod a gép mellett |
+| **2** | **`00_PARANCSOK_WINDOWS11.md`** | A pontos parancsok sorrendben, `C:\Szakvizsga` gyökérrel. Mellé tartod a gép mellett |
 | **3** | **`00_PROMPTOK.md`** | A tételenkénti promptok. **Ezt fogod a legtöbbet használni** |
 | 4 | `00_LETOLTESI_TERV.md` | A ~45 dokumentum, forrásoldal szerint csoportosítva |
 | 5 | `00_NOTEBOOK_FELTOLTES.md` | Mely `.md` fájl melyik NotebookLM-notebookba megy |
@@ -71,7 +71,7 @@ Ha a fájl `docread.pdf` néven marad, a hivatkozás is az lesz, és a 70 tétel
 ### 2. A lejárt irányelv a munkakönyvtáron KÍVÜL van
 
 ```
-D:\Szakvizsga\
+C:\Szakvizsga\
 ├── nefro_szakvizsga\        ← EZT csatolod
 └── _ARCHIV_LEJART\          ← EZT SOHA
 ```

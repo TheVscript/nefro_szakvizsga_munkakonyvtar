@@ -98,7 +98,7 @@ def pymupdf_betolt():
         import fitz
         return fitz
     except ImportError:
-        sys.exit("Hianyzik a pymupdf (ez az egyetlen fuggoseg). Telepitsd:\n"
+        sys.exit("Hianyzik a pymupdf (ez az egyetlen fuggoseg). TelepitsC:\n"
                  "  python -m pip install pymupdf")
 
 

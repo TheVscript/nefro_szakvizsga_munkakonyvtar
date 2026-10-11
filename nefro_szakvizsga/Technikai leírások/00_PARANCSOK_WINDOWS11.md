@@ -1,4 +1,4 @@
-# Pontos parancsok — Windows 11 · `D:\Szakvizsga`
+# Pontos parancsok — Windows 11 · `C:\Szakvizsga`
 
 **Útvonal:** hibrid (NotebookLM = kinyerés · Claude = gyártósor)
 **A ZIP tartalma ellenőrizve** — 8 szkript + `_kozos.py`, a tételsor benne van, az `_ARCHIV_LEJART\` már testvérkönyvtár.
@@ -36,11 +36,11 @@ python --version
 
 ## 2. 💻 Gyökérmappa és a ZIP kicsomagolása
 
-✋ Előbb **másold be a `nefro_szakvizsga_munkakonyvtar.zip`-et** a `D:\Szakvizsga` mappába.
+✋ Előbb **másold be a `nefro_szakvizsga_munkakonyvtar.zip`-et** a `C:\Szakvizsga` mappába.
 
 ```powershell
-New-Item -ItemType Directory -Force -Path "D:\Szakvizsga" | Out-Null
-Expand-Archive -Path "D:\Szakvizsga\nefro_szakvizsga_munkakonyvtar.zip" -DestinationPath "D:\Szakvizsga" -Force
+New-Item -ItemType Directory -Force -Path "C:\Szakvizsga" | Out-Null
+Expand-Archive -Path "C:\Szakvizsga\nefro_szakvizsga_munkakonyvtar.zip" -DestinationPath "C:\Szakvizsga" -Force
 ```
 
 ---
@@ -48,7 +48,7 @@ Expand-Archive -Path "D:\Szakvizsga\nefro_szakvizsga_munkakonyvtar.zip" -Destina
 ## 3. 💻 🔴 A szeparáció ellenőrzése — ez a legfontosabb egy sor
 
 ```powershell
-Get-ChildItem "D:\Szakvizsga" -Directory | Select-Object Name
+Get-ChildItem "C:\Szakvizsga" -Directory | Select-Object Name
 ```
 
 **Ezt KELL látnod — a kettőt EGYMÁS MELLETT:**
@@ -67,7 +67,7 @@ nefro_szakvizsga
 ## 4. 💻 A ZIP tartalmának ellenőrzése
 
 ```powershell
-cd "D:\Szakvizsga\nefro_szakvizsga"
+cd "C:\Szakvizsga\nefro_szakvizsga"
 Write-Host "`n--- SZKRIPTEK (9 fajl: 8 szkript + _kozos.py) ---" -ForegroundColor Cyan
 Get-ChildItem "_scriptek\*.py" | Select-Object -ExpandProperty Name
 Write-Host "`n--- TETELSOR ---" -ForegroundColor Cyan
@@ -121,7 +121,7 @@ Ez az **egyetlen** függőség. Siker esetén a végén `Successfully installed 
 ## 6. ✋ A letöltési terv megnyitása
 
 ```powershell
-notepad "D:\Szakvizsga\nefro_szakvizsga\00_LETOLTESI_TERV.md"
+notepad "C:\Szakvizsga\nefro_szakvizsga\00_LETOLTESI_TERV.md"
 ```
 
 *(Vagy nyisd meg bármilyen markdown-nézegetővel — olvashatóbb.)*
@@ -142,7 +142,7 @@ notepad "D:\Szakvizsga\nefro_szakvizsga\00_LETOLTESI_TERV.md"
 A böngésző letöltési mappáját állítsd ide, vagy másold át utólag:
 
 ```
-D:\Szakvizsga\nefro_szakvizsga\_letoltve\
+C:\Szakvizsga\nefro_szakvizsga\_letoltve\
 ```
 
 **Bármilyen néven jó.** A böngésző adta `docread.pdf` is megfelel — az `atnevezo.py` a tartalomból ismeri fel.
@@ -154,7 +154,7 @@ D:\Szakvizsga\nefro_szakvizsga\_letoltve\
 💻 Ellenőrzés, mennyi jött össze:
 
 ```powershell
-(Get-ChildItem "D:\Szakvizsga\nefro_szakvizsga\_letoltve" -Filter "*.pdf").Count
+(Get-ChildItem "C:\Szakvizsga\nefro_szakvizsga\_letoltve" -Filter "*.pdf").Count
 ```
 
 *(~45 körül kell lennie.)*
@@ -194,7 +194,7 @@ WEB-DIETETIKA-CKD-2026-10-08.pdf       →  04_tankonyv_hu\_pdf\
 💻 Ellenőrzés, hogy van-e bennük valódi szövegréteg:
 
 ```powershell
-cd "D:\Szakvizsga\nefro_szakvizsga"
+cd "C:\Szakvizsga\nefro_szakvizsga"
 python -c "import pymupdf,pathlib; [print(p.name, '->', sum(len(o.get_text().strip()) for o in pymupdf.open(p)), 'karakter') for p in pathlib.Path('06_jog/_pdf').glob('*.pdf')]"
 ```
 
@@ -209,7 +209,7 @@ Ha egy fájlnál **0 vagy nagyon kevés** karaktert ír, az képként mentődöt
 ## 8. 💻 A legegyszerűbb út — egy parancs
 
 ```powershell
-cd "D:\Szakvizsga\nefro_szakvizsga"
+cd "C:\Szakvizsga\nefro_szakvizsga"
 python _scriptek\futtat.py
 ```
 
@@ -233,7 +233,7 @@ Végigvezet a teljes rendszerezésen, a helyes sorrendben:
 **Elsőre mindig szárazon:**
 
 ```powershell
-cd "D:\Szakvizsga\nefro_szakvizsga"
+cd "C:\Szakvizsga\nefro_szakvizsga"
 python _scriptek\atnevezo.py --szaraz
 ```
 
@@ -264,15 +264,15 @@ Amit nem ismert fel, azt a végén kilistázza — azokat nevezd át kézzel a `
 
 ```powershell
 Write-Host "`n--- AMI AZ ARCHIVUMBAN VAN (ennek KINT kell lennie) ---" -ForegroundColor Yellow
-Get-ChildItem "D:\Szakvizsga\_ARCHIV_LEJART" -Recurse -Filter "*.pdf" | Select-Object -ExpandProperty Name
+Get-ChildItem "C:\Szakvizsga\_ARCHIV_LEJART" -Recurse -Filter "*.pdf" | Select-Object -ExpandProperty Name
 Write-Host "`n--- LEJART ANYAG A MUNKAKONYVTARBAN (ITT NEM LEHET SEMMI) ---" -ForegroundColor Red
-Get-ChildItem "D:\Szakvizsga\nefro_szakvizsga" -Recurse -Filter "*LEJART*" | Select-Object -ExpandProperty FullName
+Get-ChildItem "C:\Szakvizsga\nefro_szakvizsga" -Recurse -Filter "*LEJART*" | Select-Object -ExpandProperty FullName
 ```
 
 A második listának **üresnek kell lennie.** Ha nem az, mozgasd át a találatokat:
 
 ```powershell
-Move-Item "D:\Szakvizsga\nefro_szakvizsga\<útvonal>\*LEJART*.pdf" "D:\Szakvizsga\_ARCHIV_LEJART\_pdf\"
+Move-Item "C:\Szakvizsga\nefro_szakvizsga\<útvonal>\*LEJART*.pdf" "C:\Szakvizsga\_ARCHIV_LEJART\_pdf\"
 ```
 
 ---
@@ -315,8 +315,8 @@ Generalo notebookba SOHA ne toltsd fel oket, es a mappat ne csatold.
 ## 10. ✋ 🔴 Táblázat-ellenőrzés (~15 perc) — ezt ne hagyd ki
 
 ```powershell
-Get-ChildItem "D:\Szakvizsga\nefro_szakvizsga\01_iranyelv_hu\md\*.md" | Select-Object -ExpandProperty Name
-notepad "D:\Szakvizsga\nefro_szakvizsga\01_iranyelv_hu\md\CKD-IRANYELV-BM-2025.md"
+Get-ChildItem "C:\Szakvizsga\nefro_szakvizsga\01_iranyelv_hu\md\*.md" | Select-Object -ExpandProperty Name
+notepad "C:\Szakvizsga\nefro_szakvizsga\01_iranyelv_hu\md\CKD-IRANYELV-BM-2025.md"
 ```
 
 Nyiss meg **2-3 generált `.md`-t**, és nézd meg a táblázatokat:
@@ -343,13 +343,13 @@ Nyiss meg **2-3 generált `.md`-t**, és nézd meg a táblázatokat:
 
 ```powershell
 # Ez a parancs megmutatja, melyik fájlokat jelöld ki — másold ki az útvonalakat
-explorer "D:\Szakvizsga\nefro_szakvizsga\01_iranyelv_hu\md"
+explorer "C:\Szakvizsga\nefro_szakvizsga\01_iranyelv_hu\md"
 ```
 
 A 45–55. tételhez (90-es blokk) kellő források listáját a forráslapok adják:
 
 ```powershell
-Get-Content "D:\Szakvizsga\nefro_szakvizsga\tetelek_forrasok\90_ckd\047.md"
+Get-Content "C:\Szakvizsga\nefro_szakvizsga\tetelek_forrasok\90_ckd\047.md"
 ```
 
 **Szabályok:**
@@ -372,10 +372,10 @@ Get-Content "D:\Szakvizsga\nefro_szakvizsga\tetelek_forrasok\90_ckd\047.md"
 A Claude asztali alkalmazásban csatold **pontosan ezt**:
 
 ```
-D:\Szakvizsga\nefro_szakvizsga
+C:\Szakvizsga\nefro_szakvizsga
 ```
 
-> 🔴 **NE a `D:\Szakvizsga`-t csatold** — akkor az `_ARCHIV_LEJART\` is láthatóvá válik, és a lejárt 2021-es CKD-irányelvet a modell egyetlen fájlolvasásnyira megtalálja.
+> 🔴 **NE a `C:\Szakvizsga`-t csatold** — akkor az `_ARCHIV_LEJART\` is láthatóvá válik, és a lejárt 2021-es CKD-irányelvet a modell egyetlen fájlolvasásnyira megtalálja.
 
 ✋ Ellenőrzés: kérdezd meg a Claude-ot, hogy *„listázd ki a csatolt mappa gyökerét"*. Az `_ARCHIV_LEJART` **nem szerepelhet** a válaszban.
 
@@ -513,7 +513,7 @@ A CSV elejére tedd be a vezérlősorokat.
 **3. 💻 Determinisztikus szám-ellenőrzés** — ez nem vélemény, hanem összehasonlítás:
 
 ```powershell
-cd "D:\Szakvizsga\nefro_szakvizsga"
+cd "C:\Szakvizsga\nefro_szakvizsga"
 python _scriptek\ellenoriz_szamok.py _output\anki\047_kartyak.csv
 ```
 
@@ -531,7 +531,7 @@ python _scriptek\ellenoriz_szamok.py _output\anki\047_kartyak.csv
 
 ```powershell
 python _scriptek\nyomtathato.py --ellenorzes
-explorer "D:\Szakvizsga\nefro_szakvizsga\_output\nyomtathato"
+explorer "C:\Szakvizsga\nefro_szakvizsga\_output\nyomtathato"
 ```
 
 Nyisd meg a `047_forrasjegyzek.html`-t, `Ctrl+P` → *Mentés PDF-be*, vagy nyomtasd ki.
@@ -545,10 +545,10 @@ Nyisd meg a `047_forrasjegyzek.html`-t, `Ctrl+P` → *Mentés PDF-be*, vagy nyom
 ## 16. 💻 Mentés — ezt ne hagyd ki
 
 ```powershell
-New-Item -ItemType Directory -Force -Path "D:\Szakvizsga\_mentes" | Out-Null
+New-Item -ItemType Directory -Force -Path "C:\Szakvizsga\_mentes" | Out-Null
 $d = Get-Date -Format "yyyy-MM-dd"
-Compress-Archive -Path "D:\Szakvizsga\nefro_szakvizsga\_output\*" -DestinationPath "D:\Szakvizsga\_mentes\output_$d.zip" -Force
-Write-Host "Mentve: D:\Szakvizsga\_mentes\output_$d.zip" -ForegroundColor Green
+Compress-Archive -Path "C:\Szakvizsga\nefro_szakvizsga\_output\*" -DestinationPath "C:\Szakvizsga\_mentes\output_$d.zip" -Force
+Write-Host "Mentve: C:\Szakvizsga\_mentes\output_$d.zip" -ForegroundColor Green
 ```
 
 **Futtasd minden hétvége végén.** 27 óra munka van benne, és egyetlen meghajtón ül. Még jobb, ha a `_mentes` mappát OneDrive-ba vagy külső lemezre teszed.
@@ -570,7 +570,7 @@ Megmondja, **melyik forrásnál érdemes megnézni**, jött-e újabb. Nem mozgat
 # Napi rutin — a parancsok, amiket ismételni fogsz
 
 ```powershell
-cd "D:\Szakvizsga\nefro_szakvizsga"
+cd "C:\Szakvizsga\nefro_szakvizsga"
 
 # minden új tétel után:
 python _scriptek\ellenoriz_szamok.py _output\anki\NNN_kartyak.csv
@@ -579,7 +579,7 @@ python _scriptek\ellenoriz_szamok.py _output\anki\NNN_kartyak.csv
 python _scriptek\nyomtathato.py --ellenorzes
 
 # hetente:
-Compress-Archive -Path ".\_output\*" -DestinationPath "D:\Szakvizsga\_mentes\output_$(Get-Date -Format 'yyyy-MM-dd').zip" -Force
+Compress-Archive -Path ".\_output\*" -DestinationPath "C:\Szakvizsga\_mentes\output_$(Get-Date -Format 'yyyy-MM-dd').zip" -Force
 ```
 
 > 🔴 **Egy tétel = egy friss beszélgetés.** Ugyanabban a beszélgetésben a 7. tétel hivatkozása a 3. tétel szövegére fog mutatni — formailag tökéletesen, tartalmilag hamisan. És az önellenőrző blokk „nem"-et fog írni. **Költsége nulla.**
@@ -592,12 +592,12 @@ Compress-Archive -Path ".\_output\*" -DestinationPath "D:\Szakvizsga\_mentes\out
 |---|---|
 | `python` a Microsoft Store-t nyitja | Használd a `py` parancsot, vagy telepítsd újra python.org-ról „Add to PATH"-szal |
 | `Hianyzik a pymupdf` | `python -m pip install pymupdf` — ha több Pythonod van, `py -m pip install pymupdf` |
-| `Nincs PDF a _letoltve/ mappaban` | A letöltések máshová mentek. Másold át őket `D:\Szakvizsga\nefro_szakvizsga\_letoltve\`-be |
+| `Nincs PDF a _letoltve/ mappaban` | A letöltések máshová mentek. Másold át őket `C:\Szakvizsga\nefro_szakvizsga\_letoltve\`-be |
 | Az `atnevezo.py` semmit nem ismer fel | Valószínűleg bejelentkező oldalakat töltöttél le. Nyisd meg a PDF-eket, és nézd meg, mi van bennük |
 | Ékezetek szétesnek a CSV-ben | UTF-8-ban ments. PowerShellben: `chcp 65001` |
 | `Expand-Archive` hibát ír | A ZIP zárolva lehet: jobb klikk → Tulajdonságok → **Feloldás (Unblock)** |
 | A Mermaid-ábrák nem látszanak a HTML-ben | Internet kell az első megnyitáskor (CDN). Offline a forráskód látszik — nem katasztrófa, csak csúnya |
-| Útvonalhossz-hiba | Windows 260 karakteres limit. Ezért van `D:\Szakvizsga` és nem mélyebb mappa — ne told be egy hosszú útvonal alá |
+| Útvonalhossz-hiba | Windows 260 karakteres limit. Ezért van `C:\Szakvizsga` és nem mélyebb mappa — ne told be egy hosszú útvonal alá |
 
 ---
 

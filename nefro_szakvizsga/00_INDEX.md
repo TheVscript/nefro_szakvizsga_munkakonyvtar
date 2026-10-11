@@ -23,7 +23,7 @@
 > védelem a rendszerben.**
 
 ```
-D:\Szakvizsga\                        (a gyökér — EZT NE csatold)
+C:\Szakvizsga\                        (a gyökér — EZT NE csatold)
 │
 ├── nefro_szakvizsga\                  ← EZT csatolod a Claude-hoz
 │   ├── README.md                      ← INNEN INDULJ

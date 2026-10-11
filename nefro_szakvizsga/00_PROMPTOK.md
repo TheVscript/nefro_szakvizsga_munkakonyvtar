@@ -78,7 +78,7 @@ prognózis) nem találsz semmit, írd ki: "NINCS TALALAT: [témakör]" (ékezet 
 Jelöld ki a NotebookLM válaszát, `Ctrl+C`, és mentsd el ide:
 
 ```
-D:\Szakvizsga\nefro_szakvizsga\_output\forras\047_forras.md
+C:\Szakvizsga\nefro_szakvizsga\_output\forras\047_forras.md
 ```
 
 Jegyzettömbbel: *Fájl → Mentés másként* → **Kódolás: UTF-8**.
@@ -98,7 +98,7 @@ Jegyzettömbbel: *Fájl → Mentés másként* → **Kódolás: UTF-8**.
 Ne prompt, hanem parancs:
 
 ```powershell
-cd "D:\Szakvizsga\nefro_szakvizsga"
+cd "C:\Szakvizsga\nefro_szakvizsga"
 python _scriptek\ellenoriz_idezet.py _output\forras\047_forras.md
 ```
 

@@ -6,7 +6,7 @@
 
 > **Ellenőrizetlen munkaanyag.** Az árakat, linkeket és technikai paramétereket használat előtt ellenőrizni kell. Az orvosi tartalomra vonatkozó figyelmeztetéseket lásd a 9. fejezetben — ezek nem formalitások.
 >
-> **Dátum:** 2026-10-08 · **Tételsor:** Nefrológia – egységes, 2024.07.25., **70 vizsgakérdés** · **Gyökér:** `D:\Szakvizsga`
+> **Dátum:** 2026-10-08 · **Tételsor:** Nefrológia – egységes, 2024.07.25., **70 vizsgakérdés** · **Gyökér:** `C:\Szakvizsga`
 
 ---
 
@@ -172,7 +172,7 @@ A NotebookLM kimenetét **te mented fájlba**, másolás-beillesztéssel — nem
 **Minden forrásmappa ugyanúgy épül fel: `_pdf/` + `md/`.** A `_pdf/` a mesterpéldány, az `md/` a horgonyozott, feltöltendő változat.
 
 ```
-D:\Szakvizsga\
+C:\Szakvizsga\
 │
 ├── nefro_szakvizsga\              ← EZT csatolod a Claude-hoz
 │   ├── README.md
@@ -284,7 +284,7 @@ WEB-DIETETIKA-CKD-2026-10-08.pdf
 **A legegyszerűbb út — egy parancs, ami végigvezet:**
 
 ```powershell
-cd "D:\Szakvizsga\nefro_szakvizsga"
+cd "C:\Szakvizsga\nefro_szakvizsga"
 python _scriptek\futtat.py
 ```
 
@@ -429,9 +429,9 @@ A `tetelek_forrasok\NNN.md` lapok megmondják, melyik tételhez melyik forrás k
 
 ### 7.1 Mappa csatolása
 
-Csatold a **`D:\Szakvizsga\nefro_szakvizsga`** mappát.
+Csatold a **`C:\Szakvizsga\nefro_szakvizsga`** mappát.
 
-> 🔴 **NE a `D:\Szakvizsga`-t** — akkor az `_ARCHIV_LEJART\` is látható lenne.
+> 🔴 **NE a `C:\Szakvizsga`-t** — akkor az `_ARCHIV_LEJART\` is látható lenne.
 
 Ellenőrzés: kérdezd meg a Claude-ot, hogy *„listázd ki a csatolt mappa gyökerét"*. Az `_ARCHIV_LEJART` **nem szerepelhet** a válaszban.
 
@@ -1111,7 +1111,7 @@ A legtöbb hozam a **kikérdezésből** és az **Ankiból** jön — nem az olva
 
 ### 13.1 Mentés — hetente, egy sor
 
-~27 óra munka, egyetlen meghajtón. **A parancs: `00_PARANCSOK_WINDOWS11.md`, 16. lépés** — egy `Compress-Archive` sor, ami dátumozott ZIP-et tesz a `D:\Szakvizsga\_mentes\` mappába.
+~27 óra munka, egyetlen meghajtón. **A parancs: `00_PARANCSOK_WINDOWS11.md`, 16. lépés** — egy `Compress-Archive` sor, ami dátumozott ZIP-et tesz a `C:\Szakvizsga\_mentes\` mappába.
 
 Futtasd minden hétvége végén. Még jobb, ha a `_mentes` mappát OneDrive-ba vagy külső lemezre teszed. Az Anki-gyűjteményt az **AnkiWeb-szinkron** menti.
 
@@ -1249,7 +1249,7 @@ Akkor éri meg, ha a gép amúgy is megvan és szeretsz vele dolgozni, vagy ha a
 |---|---|---|
 | 2026-10-08 | **5.0** | **Szkript-refaktor és dedup.** Új `_scriptek/_kozos.py`: a mappaszerkezet (eddig **három** külön listában), a `pymupdf` import-fallback (három helyen) és a szövegnormalizálás egy forrásba került — a többi szkript innen importál. **A ki- és bemenet bitre változatlan** (118 soros regressziós diff, nulla eltérés). Python 3.9-kompatibilitás mind a 9 fájlban (`from __future__ import annotations`). Dokumentáció: a promptok szó szerinti szövege már csak a `00_PROMPTOK.md`-ben van, a `MODSZERTAN` a logikára és a *miért*-re szorítkozik; a nyomtatási beállítások és a mentési parancs csak a `00_PARANCSOK_WINDOWS11.md`-ben. Duplikált szövegblokkok: 42 → 15 |
 | 2026-10-08 | **4.0.1** | **Hibajavító kör, 20 tétel.** Szkriptek: `ellenoriz_szamok` tokenhatáros számösszehasonlítás (az „5" többé nem talál bele a „45–59"-be) + `Idezet` ellenőrzése a forráshoz + 7 oszlop; `nyomtathato` escape-elt `\|` kezelése; `ellenoriz_idezet` sorvégi elválasztás, oldalhatáron átnyúló mondat, 10 karakteres küszöb, ékezetes `NINCS TALÁLAT`; `atnevezo` névütközés-kezelés; `pdf_horgonnyal` fejléc a fizikai oldalszámról. Dokumentumok: a `<forras>` két egyenértékű formája, minősítés-kivétel az olvasási tilalom alól, 8 forrás nélküli tétel megjelölve, dupla CKD-forrás, A-HUB, `find -printf` → PowerShell, TTP/HUS kibocsátó, hemofiltráció |
-| 2026-10-08 | **4.0** | **Teljes újraírás.** A hibrid útvonal lett az elsődleges, a „csak Claude" függelékbe került. **Windows 11 / `D:\Szakvizsga`** mindenhol. Az átvitel modell nélkülivé téve (te mented a fájlt, nem a Claude). **HTML→PDF munkafolyamat** a jogszabályokhoz és webes forrásokhoz, dátumos azonosítóval. **Jogszabálynál kettős hivatkozás** (oldal + §). Anki: **6 mező, 7 oszlopos CSV**, `Statusz` mezővel. `95 – Saját` notebook (névütközés feloldása). Új: mentés és karbantartás fejezet. A v2.0→v3.0 migrációs fejezet törölve |
+| 2026-10-08 | **4.0** | **Teljes újraírás.** A hibrid útvonal lett az elsődleges, a „csak Claude" függelékbe került. **Windows 11 / `C:\Szakvizsga`** mindenhol. Az átvitel modell nélkülivé téve (te mented a fájlt, nem a Claude). **HTML→PDF munkafolyamat** a jogszabályokhoz és webes forrásokhoz, dátumos azonosítóval. **Jogszabálynál kettős hivatkozás** (oldal + §). Anki: **6 mező, 7 oszlopos CSV**, `Statusz` mezővel. `95 – Saját` notebook (névütközés feloldása). Új: mentés és karbantartás fejezet. A v2.0→v3.0 migrációs fejezet törölve |
 | 2026-10-08 | 3.1 | Munkakönyvtár-átvizsgálás: elavult `00_INDEX.md` szerkezet, notebook-névütközés, Anki-mezőütközés javítva |
 | 2026-10-08 | 3.0 | Hibrid munkamenet. A `lejart/` kikerül a munkakönyvtárból (testvérkönyvtár) |
 | 2026-10-08 | 2.0 | Felhő-only kiadás |

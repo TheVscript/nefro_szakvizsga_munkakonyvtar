@@ -86,7 +86,7 @@ def main():
 
     # --- 0. kornyezet ---
     if not pymupdf_ellenorzes():
-        sys.exit("\nA pymupdf nelkul egyik szkript sem fut. Telepitsd:\n"
+        sys.exit("\nA pymupdf nelkul egyik szkript sem fut. TelepitsC:\n"
                  "  python -m pip install pymupdf")
 
     letoltve = GYOKER / "_letoltve"

@@ -1,6 +1,6 @@
 # Nefrológiai szakvizsga — ELSŐ HÉTVÉGE checklist
 
-**Útvonal:** hibrid (NotebookLM = kinyerés · Claude = gyártósor) · **Gyökér:** `D:\Szakvizsga`
+**Útvonal:** hibrid (NotebookLM = kinyerés · Claude = gyártósor) · **Gyökér:** `C:\Szakvizsga`
 **Cél:** a hétvége végére **egy** kész, ellenőrzött tétel (a 47-es) és egy bizonyítottan működő rendszer.
 
 *Created using Anthropic Claude* — a megjegyzés maradjon rajta, amíg egy ember át nem nézte és nem validálta.
@@ -45,8 +45,8 @@ A webes PDF-ek neve **dátumos**: `NJT-EUTV-1997-CLIV-2026-10-08`. Ezek pillanat
 ## 0. Előkészítés (~20 perc)
 
 - [ ] **Python 3.9+ telepítve**, `python --version` válaszol *(nem a Microsoft Store-t nyitja meg)*
-- [ ] `D:\Szakvizsga` létezik, van rajta **~10 GB** szabad hely
-- [ ] A munkakönyvtár ZIP bemásolva `D:\Szakvizsga`-ba
+- [ ] `C:\Szakvizsga` létezik, van rajta **~10 GB** szabad hely
+- [ ] A munkakönyvtár ZIP bemásolva `C:\Szakvizsga`-ba
 - [ ] ZIP kicsomagolva → **`nefro_szakvizsga\` és `_ARCHIV_LEJART\` EGYMÁS MELLETT**
 - [ ] Az ellenőrző parancs **9 fájlt a `_scriptek\`-ben és a tételsort** találta
 - [ ] `pip install pymupdf` lefutott
@@ -110,7 +110,7 @@ A webes PDF-ek neve **dátumos**: `NJT-EUTV-1997-CLIV-2026-10-08`. Ezek pillanat
 
 ## 4. Claude beállítása (~30 perc)
 
-- [ ] A **`D:\Szakvizsga\nefro_szakvizsga`** mappa csatolva — **NEM a `D:\Szakvizsga`!**
+- [ ] A **`C:\Szakvizsga\nefro_szakvizsga`** mappa csatolva — **NEM a `C:\Szakvizsga`!**
 - [ ] Ellenőrizve: az `_ARCHIV_LEJART\` **nem látszik** a csatolt mappából
 - [ ] A 7.2-es teljes agent-definíció bemásolva a projekt-utasításokba
 
