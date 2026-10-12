@@ -31,6 +31,56 @@
 ---
 
 ## Javasolt sorrend
+# NotebookLM – feltöltési lista notebookonként
+
+*Created using Anthropic Claude* — ellenőrizetlen munkaanyag.
+**Frissítve:** 2026-10-12 — beolvasztva a már megvolt, de nem listázott források,
+a forráshiányok és a pótlási ötletek (lásd a 🆕, ⛔ és ◐ jelöléseket).
+
+> **Jelölések**
+> - 🆕 = új sor, a korábbi listából hiányzott, de a fájl már megvan / letöltve
+> - ⚠️ = régi vagy lejártra gyanús forrás
+> - ⛔ = a blokk tételei közül ehhez **nincs forrás**
+> - ◐ = a tételhez **csak részben** van forrás
+> - **Prio `?`** = az új sor prioritását / mappáját te döntsd el, a szkriptben nincs hozzá bejegyzés
+>
+> A hiányjelölések a **fájlcímek és leírások** alapján készültek, a PDF-ek
+> tartalmát nem láttam. Minden ⛔/◐ jelölés **tipp**: nyisd meg a forráslapot,
+> és ellenőrizd.
+
+> **Mielőtt ezt használod**, futtasd le:
+> ```powershell
+> python _scriptek\pdf_horgonnyal.py
+> ```
+> Ez tölti fel a `md/` mappákat. Az alábbi listák ezekre a fájlokra
+> hivatkoznak.
+>
+> **Fontos:** `.md`-t tölts fel, ne PDF-et. A fájlkiválasztóban több
+> fájlt is kijelölhetsz egyszerre (`Ctrl` + kattintás).
+>
+> Amelyik fájl még nincs meg, azt hagyd ki — később pótolhatod.
+> A notebook bármikor bővíthető.
+>
+> ## 🔴 Két dolog, amit a listák nem oldanak meg helyetted
+>
+> **(a) A CKD-irányelvnek két változata van:** `CKD-IRANYELV-BM-2025` és
+> `CKD-IRANYELV-BM-2025-SUPPL`. **Ugyanaz a tartalom, más tördelés.** Ha
+> mindkettőt feltöltöd ugyanabba a notebookba, minden találat duplán jön,
+> és a hivatkozás bármelyikre mutathat. **Csak az egyiket töltsd fel** —
+> javaslat: a `-SUPPL`-t, mert olvashatóbb a tördelése.
+> *(A „Feltöltendő fájl" számok mindkettőt számolják — ha csak egyet töltesz fel,
+> vonj le egyet azokból a blokkokból, ahol szerepel: 10, 40, 70, 90, 100, 110.)*
+>
+> **(b) Sok tételhez nincs letölthető forrás.** A korábbi lista 8 tételt
+> jelzett (6, 8, 28, 29, 30, 31, 32, 39). A fájlcímek alapján **további 13** is
+> forrás nélkül marad (24, 25, 27, 34, 35, 36, 37, 52, 54, 55, 60, 61, 62),
+> és **7 tétel csak részben fedett** (3, 5, 7, 17, 23, 40, 63).
+> Lásd a lista végén: **B) Kimaradt tételek** és **C) Részben kimaradt tételek**.
+> A notebook bármikor bővíthető.
+
+---
+
+## Javasolt sorrend
 
 **Ne építsd fel mind a 11-et egyszerre.** Kezdd a `90 – CKD`-val
 (a legnagyobb blokk, 11 tétel), vidd végig rajta az első tételt,
@@ -61,10 +111,12 @@
 
 - **1.** Veseműködés vizsgálata
 - **2.** Vizelet vizsgálata
-- **3.** Vese és húgyúti rendszer képalkotó vizsgálata
+- **3.** Vese és húgyúti rendszer képalkotó vizsgálata ◐
 - **4.** Vesebiopszia
 
 </details>
+
+◐ **3.** csak kontrasztanyag-dokumentumok vannak hozzá (ultrahang, CT, MR, izotóp nincs).
 
 ## `20 – Víz-, elektrolit- és sav-bázis háztartás`
 
@@ -78,16 +130,19 @@
 
 <details><summary>Mely tételek tartoznak ide</summary>
 
-- **5.** Vízháztartás zavarai
-- **6.** K háztartás zavarai
-- **7.** C, P, Mg metabolizmus zavarai
-- **8.** Sav-bázis háztartás
+- **5.** Vízháztartás zavarai ◐
+- **6.** K háztartás zavarai ⛔
+- **7.** C, P, Mg metabolizmus zavarai ◐
+- **8.** Sav-bázis háztartás ⛔
 
 </details>
 
+⛔ **6, 8:** nincs forrás. ◐ **5:** csak a hyponatraemia (hypernatraemia, volumenzavarok nincs).
+◐ **7:** a CKD-MBD csak a CKD-s Ca/P-t fedi (Mg, általános Ca-zavarok nincs).
+
 ## `30 – Glomerulopátiák, immunológia`
 
-**Tételek:** 9–18 (10 db) · **Feltöltendő fájl:** 4
+**Tételek:** 9–18 (10 db) · **Feltöltendő fájl:** 5
 
 | Kész | Fájl | Prio | Dokumentum |
 |---|---|---|---|
@@ -95,6 +150,14 @@
 | [ ] | `02_manet_tarsasag/md/IMMUNSZEROLOGIA-MANET-2024.md` | 2 | Immunserologiai vizsgálatok vesebetegségekben, 2024 |
 | [ ] | `02_manet_tarsasag/md/VESEBIOPSZIA-MANET-2025.md` | 2 | Percutan natív vesebiopszia végzése felnőttkori nephrolo… |
 | [ ] | `03_kdigo/md/KDIGO-GN.md` | 3 | KDIGO – Glomerular Diseases |
+| [ ] | `03_kdigo/md/EULAR-ERA-LN-2025.md` 🆕 | 3 | EULAR – SLE vesebetegséggel (lupus nephritis), 2025-ös frissítés *(a 15. tételhez)* |
+
+> 🆕 **EULAR LN:** a szkriptben az azonosító `EULAR-ERA-LN-2023`. A 2025-ös frissítés
+> (Fanouriakis et al., Ann Rheum Dis 85 (2026) 75–90) a 2019-es LN-ajánlásokat váltja fel,
+> ezért az azonosítót **át kell írni** az `atnevezo.py`-ban és a `00_FORRAS_ID_LISTA.md`-ben
+> (pl. `EULAR-ERA-LN-2025`). A korábban letöltött `…EULAR-ERA-LN-2023_.pdf` **sérült**
+> (2 bájt), és a fájlnév az általános SLE-irányelvre (2023) utal, nem az LN-re — újra kell
+> tölteni.
 
 <details><summary>Mely tételek tartoznak ide</summary>
 
@@ -106,14 +169,16 @@
 - **14.** Renalis és szisztemás vasculitis
 - **15.** Lupus nephritis
 - **16.** Postinfectiozus glom. betegségek
-- **17.** Renalis amyloidosis, monoclonalis Ig. depositio okozta glom. károsodás
+- **17.** Renalis amyloidosis, monoclonalis Ig. depositio okozta glom. károsodás ◐
 - **18.** Thrombotikus microangiopathiák és HUS
 
 </details>
 
+◐ **17.** az amyloidosis valószínűleg nincs lefedve — ellenőrizd a KDIGO-GN-ben.
+
 ## `40 – Diabétesz, hypertonia, terhesség`
 
-**Tételek:** 19–25 (7 db) · **Feltöltendő fájl:** 12
+**Tételek:** 19–25 (7 db) · **Feltöltendő fájl:** 16
 
 | Kész | Fájl | Prio | Dokumentum |
 |---|---|---|---|
@@ -129,6 +194,21 @@
 | [ ] | `03_kdigo/md/KDIGO-CKD.md` | 3 | KDIGO – CKD Evaluation and Management |
 | [ ] | `03_kdigo/md/KDIGO-BP-2021.md` | 3 | KDIGO 2021 – Blood Pressure Management in CKD |
 | [ ] | `03_kdigo/md/KDIGO-DIABETES.md` | 3 | KDIGO – Diabetes Management in CKD |
+| [ ] | `03_kdigo/md/EULAR-ERA-LN-2025.md` 🆕 | 3 | EULAR – lupus nephritis, 2025 *(a 24., 25. tételhez: terhesség LN-ben)* |
+| [ ] | `03_kdigo/md/ESC-ESH-HT-2018.md` 🆕 ⚠️ | ? | ESC/ESH 2018 hypertonia-irányelv — **lejártra gyanús**, lásd lent |
+| [ ] | `?/md/JARDIANCE-SMPC-HU.md` 🆕 | ? | Jardiance (empagliflozin) alkalmazási előírás, EMA *(a 20. tételhez)* |
+| [ ] | `?/md/FORXIGA-SMPC-HU.md` 🆕 | ? | Forxiga (dapagliflozin) alkalmazási előírás, EMA *(a 20. tételhez)* |
+
+> 🆕 **ESC/ESH 2018:** tudomásom szerint az ESH 2023-as irányelv és az ESC 2024-es
+> emelkedett vérnyomás-irányelv váltotta fel. Ellenőrizd az eredeti kibocsátónál. Ha
+> tényleg lejárt, nem ide, hanem az `_ARCHIV_LEJART` mappába való, és a hatályos
+> verziót kell pótolni (21, 22, 23. tétel).
+>
+> 🆕 **Jardiance / Forxiga:** a szkriptben nincs hatósági alkalmazási előíráshoz
+> bejegyzés, és a mappát (`?`) te döntsd el. A `FORXIGA` fájl neve `_ZAJOS_AI-nak_`
+> előtagot kapott — tisztázd, hogy ezt feltöltendőnek szánod-e.
+> Az azonosítók (`JARDIANCE-SMPC-HU`, `FORXIGA-SMPC-HU`) **javaslatok**; vedd fel a
+> `00_FORRAS_ID_LISTA.md`-be és az `atnevezo.py`-ba.
 
 <details><summary>Mely tételek tartoznak ide</summary>
 
@@ -136,11 +216,14 @@
 - **20.** Diabeteses NP: prevenció és kezelés
 - **21.** HT nem gyógyszeres megelőzése és kezelése
 - **22.** HT gyógyszeres kezelése
-- **23.** Renovaszkularis HT
-- **24.** Veseszövődmények terhességben
-- **25.** Vesebetegek terhessége
+- **23.** Renovaszkularis HT ◐
+- **24.** Veseszövődmények terhességben ⛔
+- **25.** Vesebetegek terhessége ⛔
 
 </details>
+
+⛔ **24, 25:** nincs önálló terhességi forrás (az EULAR LN 2025 érinti a családtervezést,
+de nem pótolja). ◐ **23:** csak a KDIGO-BP és a MHT-irányelv érinti.
 
 ## `50 – Örökletes betegségek, tubulopátiák`
 
@@ -154,12 +237,14 @@
 <details><summary>Mely tételek tartoznak ide</summary>
 
 - **26.** Autoszomalis domináns polycystas vesebetegség
-- **27.** Alport sy, egyéb familiaris glomer. sy-k
-- **28.** Na és K anyagcsere genetikai zavarai (Bartter sy, Gitelman sy, Liddle sy)
-- **29.** Renalis tubularis acidosis
-- **30.** Leggyakoribb vese fejlődési rendellenességek
+- **27.** Alport sy, egyéb familiaris glomer. sy-k ⛔
+- **28.** Na és K anyagcsere genetikai zavarai (Bartter sy, Gitelman sy, Liddle sy) ⛔
+- **29.** Renalis tubularis acidosis ⛔
+- **30.** Leggyakoribb vese fejlődési rendellenességek ⛔
 
 </details>
+
+⛔ **27–30:** nincs forrás. (A 27. tételnél a KDIGO-GN tudtommal nem tárgyalja az Alport-szindrómát — ellenőrizd.)
 
 ## `60 – Fertőzés, kő, obstrukció, interstitialis`
 
@@ -174,15 +259,17 @@
 
 <details><summary>Mely tételek tartoznak ide</summary>
 
-- **31.** Felnőttek húgyúti fertőzése
-- **32.** Húgyútak gombás fertőzése
+- **31.** Felnőttek húgyúti fertőzése ⛔
+- **32.** Húgyútak gombás fertőzése ⛔
 - **33.** Nephrolithiasis és nephrocalcinosis
-- **34.** Obstruktív uropathiák
-- **35.** Akut interstitialis nephritis
-- **36.** Vesicoureteralis reflux és reflux NP
-- **37.** Chr. interstitialis nephritis
+- **34.** Obstruktív uropathiák ⛔
+- **35.** Akut interstitialis nephritis ⛔
+- **36.** Vesicoureteralis reflux és reflux NP ⛔
+- **37.** Chr. interstitialis nephritis ⛔
 
 </details>
+
+⛔ **31, 32, 34–37:** nincs forrás. Ebben a blokkban csak a 33. (vesekő) fedett, és az is 2012-es anyagra épül.
 
 ## `70 – Szisztémás, vaszkuláris, geriátria`
 
@@ -200,10 +287,12 @@
 <details><summary>Mely tételek tartoznak ide</summary>
 
 - **38.** Myelomas vese
-- **39.** Veseerek thrombemboliás betegségei
-- **40.** Geriátria és nephrológia
+- **39.** Veseerek thrombemboliás betegségei ⛔
+- **40.** Geriátria és nephrológia ◐
 
 </details>
+
+⛔ **39:** nincs forrás. ◐ **40:** nincs önálló geriátriai forrás, csak az általános CKD-irányelv.
 
 ## `80 – Akut vesekárosodás`
 
@@ -220,13 +309,13 @@
 - **41.** AKI
 - **42.** AKI: epidemiológia, klinikai tünetek-bizonyítékok, megelőzés
 - **43.** AKI kezelése (nondialítikus th.)
-- **44.** Hepatorenalis sy
+- **44.** Hepatorenalis sy ◐ *(ellenőrizd: csak érintőlegesen a KDIGO-AKI-ban?)*
 
 </details>
 
 ## `90 – CKD és szövődményei`
 
-**Tételek:** 45–55 (11 db) · **Feltöltendő fájl:** 16
+**Tételek:** 45–55 (11 db) · **Feltöltendő fájl:** 18
 
 | Kész | Fájl | Prio | Dokumentum |
 |---|---|---|---|
@@ -246,6 +335,8 @@
 | [ ] | `03_kdigo/md/KDIGO-CKD-MBD.md` | 3 | KDIGO – CKD-MBD |
 | [ ] | `03_kdigo/md/KDIGO-LIPID.md` | 3 | KDIGO – Lipid Management in CKD |
 | [ ] | `05_tankonyv_en/md/AJKD-CC-HEART-FAILURE-2025.md` | 5 | Kidney Dysfunction in Heart Failure: Core Curriculum 2025 |
+| [ ] | `?/md/JARDIANCE-SMPC-HU.md` 🆕 | ? | Jardiance alkalmazási előírás *(a 47. tételhez: CKD kezelés, SGLT2i)* |
+| [ ] | `?/md/FORXIGA-SMPC-HU.md` 🆕 | ? | Forxiga alkalmazási előírás *(a 47. tételhez)* |
 
 <details><summary>Mely tételek tartoznak ide</summary>
 
@@ -256,16 +347,19 @@
 - **49.** Cardiovascularis betegségek a chr. vesebetegségben
 - **50.** Anaemia diagnosztikája chr. vesebetegségekben
 - **51.** Anaemia kezelése CKD-ben
-- **52.** Thrombocyta funkció, vérszegénység, infekció chr. vesebetegségben
+- **52.** Thrombocyta funkció, vérszegénység, infekció chr. vesebetegségben ⛔
 - **53.** Csont és ásványi anyagcsere chr. vesebetegségekben
-- **54.** Chr. vesebetegség neurológiai komplikációi
-- **55.** Bőrelváltozások CKD-ben
+- **54.** Chr. vesebetegség neurológiai komplikációi ⛔
+- **55.** Bőrelváltozások CKD-ben ⛔
 
 </details>
 
+⛔ **52, 54, 55:** nincs forrás (az anaemia-rész a KDIGO-ANEMIA-ban lehet, a thrombocyta/infekció nem).
+> A Jardiance/Forxiga ugyanaz a fájl, mint a `40` blokkban — a két notebookba **külön-külön** töltöd fel.
+
 ## `100 – Vesepótló kezelés (HD, PD, plazmaferezis)`
 
-**Tételek:** 56–62 (7 db) · **Feltöltendő fájl:** 7
+**Tételek:** 56–62 (7 db) · **Feltöltendő fájl:** 8
 
 | Kész | Fájl | Prio | Dokumentum |
 |---|---|---|---|
@@ -276,18 +370,28 @@
 | [ ] | `02_manet_tarsasag/md/DIALIZIS-UTMUTATO-MANET-2021.md` | 2 | A korszerű dialíziskezelés gyakorlata – szakmai útmutató… |
 | [ ] | `05_tankonyv_en/md/AJKD-CC-NUTRITION-2022.md` | 5 | Nutrition in Kidney Disease: Core Curriculum 2022 |
 | [ ] | `05_tankonyv_en/md/AJKD-CC-VASCULAR-ACCESS-2025.md` | 5 | Hemodialysis Vascular Access: Core Curriculum 2025 |
+| [ ] | `02_manet_tarsasag/md/VESEBETEGSEG-TERHEI-MANET-2019.md` 🆕 | 2 | A vesebetegség terhei, az ellátáshoz való hozzáférés és az egyenlőtlenségek *(az 56. tételhez)* |
+
+> 🆕 **VESEBETEGSEG-TERHEI-MANET-2019:** a megvolt fájl (`ki-burden_of_kd_2019.pdf`) az
+> **angol eredeti** Kidney International-editorial (World Kidney Day 2019), nem a magyar
+> MANET-változat. A szkript kulcsszavai magyarok, ezért **nem ismeri fel automatikusan** —
+> kézzel nevezd át. Nézd meg az `056.md` forráslapot, melyik változatot várja; ha az angol
+> eredetit tartod meg, érdemes külön azonosítót adni (pl. `KI-BURDEN-KD-2019`), hogy a
+> „MANET" jelölés ne legyen félrevezető.
 
 <details><summary>Mely tételek tartoznak ide</summary>
 
 - **56.** Vesepótló kezelések fajtái, választásuk
 - **57.** HD: vascularis hozzáférés (Cimino)
 - **58.** HD: technológia, hatékonyság, kimenetel
-- **59.** HD acut szövődményei
-- **60.** PD elvek, technikák, hatékonyság
-- **61.** PD szövődményei
-- **62.** Plasmapheresis
+- **59.** HD acut szövődményei ◐
+- **60.** PD elvek, technikák, hatékonyság ⛔
+- **61.** PD szövődményei ⛔
+- **62.** Plasmapheresis ⛔
 
 </details>
+
+⛔ **60, 61, 62:** nincs forrás. ◐ **59:** a dialízis-útmutató részletessége ismeretlen.
 
 ## `110 – Transzplantáció`
 
@@ -302,16 +406,87 @@
 
 <details><summary>Mely tételek tartoznak ide</summary>
 
-- **63.** TX immunológiai alapelvek
+- **63.** TX immunológiai alapelvek ◐
 - **64.** TX immunszupresszív szerek
 - **65.** TX preoperatív donor és recipiens vezetés
 - **66.** Rejectio kezelése és megelőzése
 - **67.** Vesetranszplantált beteg gondozása
-- **68.** Chr. allograft nephropathia
-- **69.** Vesebetegség kiújulása TX után
-- **70.** TX kimenetele
+- **68.** Chr. allograft nephropathia ◐
+- **69.** Vesebetegség kiújulása TX után ◐
+- **70.** TX kimenetele ◐
 
 </details>
+
+◐ **63:** nincs HLA/alloreaktivitás-alap. ◐ **68–70:** csak érintőlegesen a KDIGO-TX és a KDIGO-GN.
+⚠️ A KDIGO-TX recipiens-irányelv tudtommal 2009-es — ellenőrizd, van-e frissebb.
+
+---
+
+# Hiányok és pótlás
+
+## A) Ötletek a pótlásra
+
+> Ezek **ötletek, nem ellenőrzött hivatkozások.** Mielőtt feltöltöd: létezik-e a
+> dokumentum, ki adta ki, hatályos-e.
+
+| Tételek | Forrástípus (ötlet) |
+|---|---|
+| 31, 32 | EAU urológiai fertőzések irányelve; hazai szakmai irányelv, ha van |
+| 60, 61 | ISPD peritonealis dialízis ajánlások |
+| 62 | ASFA irányelv (plazmaferezis) |
+| 6, 28, 29 | KDIGO Controversies Conference anyagok; AJKD Core Curriculum |
+| 27 | KDIGO Alport-konszenzus / Core Curriculum |
+| 8, 25, 35, 36, 37 | AJKD Core Curriculum cikkek, ha van a témáról |
+| 34, 39 | általános nephrológia / urológia tankönyvi fejezet |
+| 52, 54, 55 | tankönyvi fejezet vagy áttekintő cikk (CKD-szövődmények) |
+| 21, 22, 23 | ESH 2023 és/vagy ESC 2024 hypertonia-irányelv (az ESC/ESH 2018 helyett) |
+| 64–70 | frissebb KDIGO-TX / EAST (transzplantációs) irányelv, ha van |
+
+**Letöltési tennivalók a már megkeresett forrásokhoz:**
+- EULAR LN 2025: Ann Rheum Dis 85 (2026) 75–90 — a kiadói PDF az intézményi repozitóriumokban is elérhető
+  (pl. `boa.unimib.it`), de a letöltés után nézd meg, hogy tényleg a megfelelő dokumentum-e.
+- A 2019-es EULAR/ERA-EDTA LN-ajánlások (Ann Rheum Dis 2020;79:713–723) **lejártak** → `_ARCHIV_LEJART`.
+
+## B) Kimaradt tételek (nincs hozzájuk forrás) — 21 db
+
+| # | Tétel | Blokk | Megjegyzés |
+|---|---|---|---|
+| 6 | K háztartás zavarai | 20 | a korábbi lista is jelezte |
+| 8 | Sav-bázis háztartás | 20 | a korábbi lista is jelezte |
+| 24 | Veseszövődmények terhességben | 40 | |
+| 25 | Vesebetegek terhessége | 40 | |
+| 27 | Alport sy, egyéb familiaris glomer. sy-k | 50 | KDIGO-GN tudtommal nem tárgyalja → **ellenőrizd** |
+| 28 | Na és K genetikai zavarai (Bartter, Gitelman, Liddle) | 50 | a korábbi lista is jelezte |
+| 29 | Renalis tubularis acidosis | 50 | a korábbi lista is jelezte |
+| 30 | Leggyakoribb vese fejlődési rendellenességek | 50 | a korábbi lista is jelezte |
+| 31 | Felnőttek húgyúti fertőzése | 60 | a korábbi lista is jelezte |
+| 32 | Húgyutak gombás fertőzése | 60 | a korábbi lista is jelezte |
+| 34 | Obstruktív uropathiák | 60 | |
+| 35 | Akut interstitialis nephritis | 60 | |
+| 36 | Vesicoureteralis reflux és reflux NP | 60 | |
+| 37 | Chr. interstitialis nephritis | 60 | |
+| 39 | Veseerek thrombemboliás betegségei | 70 | a korábbi lista is jelezte |
+| 52 | Thrombocyta funkció, vérszegénység, infekció CKD-ben | 90 | |
+| 54 | Chr. vesebetegség neurológiai komplikációi | 90 | |
+| 55 | Bőrelváltozások CKD-ben | 90 | |
+| 60 | PD elvek, technikák, hatékonyság | 100 | |
+| 61 | PD szövődményei | 100 | |
+| 62 | Plasmapheresis | 100 | |
+
+## C) Részben kimaradt tételek — 7 db
+
+| # | Tétel | Mi van | Mi hiányzik (tipp) |
+|---|---|---|---|
+| 3 | Vese és húgyúti rendszer képalkotó vizsgálata | kontrasztanyag-dokumentumok | ultrahang, CT, MR, izotóp, UTI-képalkotás |
+| 5 | Vízháztartás zavarai | hyponatraemia-irányelv | hypernatraemia, volumenállapotok |
+| 7 | C, P, Mg metabolizmus zavarai | CKD-MBD (MANET 2012, KDIGO) | Mg; nem CKD-s Ca/P-zavarok |
+| 17 | Renalis amyloidosis, monoclonalis Ig depositio | KDIGO-GN (részben?) | amyloidosis → **ellenőrizd** |
+| 23 | Renovaszkuláris HT | KDIGO-BP, MHT-HT | diagnosztika, intervenció |
+| 40 | Geriátria és nephrológia | általános CKD-irányelv | önálló geriátriai forrás |
+| 63 | TX immunológiai alapelvek | KDIGO-TX (klinikai) | HLA, alloreaktivitás, tolerancia |
+
+**Ellenőrizendő** (a lista szerint van forrás, de vékony lehet): 44 (hepatorenalis sy),
+59 (HD akut szövődményei), 68–70 (allograft nephropathia, kiújulás, TX kimenetele).
 
 ---
 
@@ -331,7 +506,8 @@ meg akarsz tanulni. És innen generálsz audio overview-t is.
 ### `99 – ARCHÍV / LEJÁRT`
 
 Ide a `_ARCHIV_LEJART/md/` tartalma megy: a 2021-es EMMI CKD-irányelv és
-minden más, amit egy frissebb felülírt.
+minden más, amit egy frissebb felülírt. *(A 2019-es EULAR/ERA-EDTA LN-ajánlás és —
+ha lejártnak bizonyul — az ESC/ESH 2018 is ide kerül.)*
 
 **Generáláshoz soha nem nyitod meg.** Egyetlen használata a
 verzió-összehasonlítás:
@@ -355,7 +531,19 @@ A 2025-ös a hatályos — ezt írd ki a táblázat alá.
 2. **Átvételi teszt** — tegyél fel egy kérdést, aminek a válasza biztosan
    NINCS a feltöltött forrásokban. A helyes válasz: `NINCS A FORRÁSOKBAN`.
    Bármi más → erősítsd a custom instructiont, és teszteld újra.
+   *(A B) szakasz tételeinél ezt konkrétan érdemes kipróbálni.)*
 3. Csak ezután kezdj kinyerni.
+
+---
+
+## Teendők a fájlok miatt (`atnevezo.py`)
+
+- [ ] `immunserologiai` → `immunszerologiai` elírás javítása a szkriptben
+      (különben az `IMMUNSZEROLOGIA-MANET-2024` PDF nem ismerhető fel).
+- [ ] A duplikált `immunszerologiai…(1).pdf` törlése (bájtra azonos).
+- [ ] A sérült EULAR PDF újratöltése, azonosító átírása `EULAR-ERA-LN-2025`-re.
+- [ ] Új azonosítók felvétele: `ESC-ESH-HT-2018` (vagy utódja), `JARDIANCE-SMPC-HU`,
+      `FORXIGA-SMPC-HU`, és az angol KI-editorial azonosítója.
 
 
 *Created using Anthropic Claude*
