@@ -91,8 +91,9 @@ K = {
         ["kdigo", "blood pressure"], ["management", "2021"], ["executive summary"]),
 
     # 3. EULAR Lupus (ha SLE vagy Lupus Nephritis címváltozat van)
-    "EULAR-ERA-LN-2023": ("03_kdigo/_pdf",
+    "EULAR-ERA-LN-2025": ("03_kdigo/_pdf",
         ["eular", "lupus"], ["erythematosus", "nephritis", "2023"], []),
+    
 
     # 4. AJKD Core Curriculum Hematuria (2. tételhez)
     "AJKD-CC-HEMATURIA-2026": ("05_tankonyv_en/_pdf",

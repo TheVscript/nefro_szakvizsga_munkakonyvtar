@@ -193,7 +193,7 @@
   tipp:  SGLT2-CKD-MANET-2024   ->  02_manet_tarsasag/_pdf/
   egyeb lehetoseg: CKD-IRANYELV-EMMI-2021-LEJART, SGLT2-T2DM-CHECKLIST-2026, CKD-IRANYELV-BM-2025-SUPPL
 
-[ULAR recommendations for the management ofsystemic lup-2023 update - EULAR-ERA-LN-2023 .pdf]  <-- nincs szovegreteg (szkennelt?). Kihagyva.
+[ULAR recommendations for the management ofsystemic lup-2023 update - EULAR-ERA-LN-2025 .pdf]  <-- nincs szovegreteg (szkennelt?). Kihagyva.
 
 [(ZAJOS AI-nak)gyógyszergyári hatósági alkalmazási előírás - forxiga-epar-product-information_hu.pdf]
   eleje: 1 i. melleklet alkalmazasi eloiras…
@@ -380,10 +380,10 @@
   tipp:  SGLT2-CKD-MANET-2024   ->  02_manet_tarsasag/_pdf/
   egyeb lehetoseg: CKD-IRANYELV-EMMI-2021-LEJART, SGLT2-T2DM-CHECKLIST-2026, CKD-IRANYELV-BM-2025-SUPPL
 
-[ULAR recommendations for the management ofsystemic lup-2023 update - EULAR-ERA-LN-2023 .pdf]  <-- nincs szovegreteg (szkennelt?). Kihagyva.
+[ULAR recommendations for the management ofsystemic lup-2023 update - EULAR-ERA-LN-2025 .pdf]  <-- nincs szovegreteg (szkennelt?). Kihagyva.
 
 ==== 0 fajl atnevezve es bemozgatva.
-Kihagyva (14): (ZAJOS AI-nak)gyógyszergyári hatósági alkalmazási előírás - forxiga-epar-product-information_hu.pdf, esc_esh_guidelines_2018.pdf, immunszerologiai_vizsgalatok_vesebetegsegekben_2024 (1).pdf, immunszerologiai_vizsgalatok_vesebetegsegekben_2024.pdf, jardiance-epar-product-information_hu.pdf, ki-burden_of_kd_2019.pdf, ULAR recommendations for the management ofsystemic lup-2023 update - EULAR-ERA-LN-2023 .pdf, (ZAJOS AI-nak)gyógyszergyári hatósági alkalmazási előírás - forxiga-epar-product-information_hu.pdf, esc_esh_guidelines_2018.pdf, immunszerologiai_vizsgalatok_vesebetegsegekben_2024 (1).pdf, immunszerologiai_vizsgalatok_vesebetegsegekben_2024.pdf, jardiance-epar-product-information_hu.pdf, ki-burden_of_kd_2019.pdf, ULAR recommendations for the management ofsystemic lup-2023 update - EULAR-ERA-LN-2023 .pdf
+Kihagyva (14): (ZAJOS AI-nak)gyógyszergyári hatósági alkalmazási előírás - forxiga-epar-product-information_hu.pdf, esc_esh_guidelines_2018.pdf, immunszerologiai_vizsgalatok_vesebetegsegekben_2024 (1).pdf, immunszerologiai_vizsgalatok_vesebetegsegekben_2024.pdf, jardiance-epar-product-information_hu.pdf, ki-burden_of_kd_2019.pdf, ULAR recommendations for the management ofsystemic lup-2023 update - EULAR-ERA-LN-2025 .pdf, (ZAJOS AI-nak)gyógyszergyári hatósági alkalmazási előírás - forxiga-epar-product-information_hu.pdf, esc_esh_guidelines_2018.pdf, immunszerologiai_vizsgalatok_vesebetegsegekben_2024 (1).pdf, immunszerologiai_vizsgalatok_vesebetegsegekben_2024.pdf, jardiance-epar-product-information_hu.pdf, ki-burden_of_kd_2019.pdf, ULAR recommendations for the management ofsystemic lup-2023 update - EULAR-ERA-LN-2025 .pdf
 Ezeket nevezd at kezzel a 00_FORRAS_ID_LISTA.md alapjan.
 
 >>> Mehet tovabb? [Enter = igen, n = kilepes] 4
@@ -644,7 +644,7 @@ Successfully installed pymupdf-1.28.2
   tipp:  SGLT2-CKD-MANET-2024   ->  02_manet_tarsasag/_pdf/
   egyeb lehetoseg: CKD-IRANYELV-EMMI-2021-LEJART, SGLT2-T2DM-CHECKLIST-2026, CKD-IRANYELV-BM-2025-SUPPL
 
-[ULAR recommendations for the management ofsystemic lup-2023 update - EULAR-ERA-LN-2023 .pdf]  <-- nincs szovegreteg (szkennelt?). Kihagyva.
+[ULAR recommendations for the management ofsystemic lup-2023 update - EULAR-ERA-LN-2025 .pdf]  <-- nincs szovegreteg (szkennelt?). Kihagyva.
 
 [(ZAJOS AI-nak)gyógyszergyári hatósági alkalmazási előírás - forxiga-epar-product-information_hu.pdf]
   eleje: 1 i. melleklet alkalmazasi eloiras…
@@ -831,10 +831,10 @@ Successfully installed pymupdf-1.28.2
   tipp:  SGLT2-CKD-MANET-2024   ->  02_manet_tarsasag/_pdf/
   egyeb lehetoseg: CKD-IRANYELV-EMMI-2021-LEJART, SGLT2-T2DM-CHECKLIST-2026, CKD-IRANYELV-BM-2025-SUPPL
 
-[ULAR recommendations for the management ofsystemic lup-2023 update - EULAR-ERA-LN-2023 .pdf]  <-- nincs szovegreteg (szkennelt?). Kihagyva.
+[ULAR recommendations for the management ofsystemic lup-2023 update - EULAR-ERA-LN-2025 .pdf]  <-- nincs szovegreteg (szkennelt?). Kihagyva.
 
 ==== 0 fajl atnevezve es bemozgatva.
-Kihagyva (14): (ZAJOS AI-nak)gyógyszergyári hatósági alkalmazási előírás - forxiga-epar-product-information_hu.pdf, esc_esh_guidelines_2018.pdf, immunszerologiai_vizsgalatok_vesebetegsegekben_2024 (1).pdf, immunszerologiai_vizsgalatok_vesebetegsegekben_2024.pdf, jardiance-epar-product-information_hu.pdf, ki-burden_of_kd_2019.pdf, ULAR recommendations for the management ofsystemic lup-2023 update - EULAR-ERA-LN-2023 .pdf, (ZAJOS AI-nak)gyógyszergyári hatósági alkalmazási előírás - forxiga-epar-product-information_hu.pdf, esc_esh_guidelines_2018.pdf, immunszerologiai_vizsgalatok_vesebetegsegekben_2024 (1).pdf, immunszerologiai_vizsgalatok_vesebetegsegekben_2024.pdf, jardiance-epar-product-information_hu.pdf, ki-burden_of_kd_2019.pdf, ULAR recommendations for the management ofsystemic lup-2023 update - EULAR-ERA-LN-2023 .pdf
+Kihagyva (14): (ZAJOS AI-nak)gyógyszergyári hatósági alkalmazási előírás - forxiga-epar-product-information_hu.pdf, esc_esh_guidelines_2018.pdf, immunszerologiai_vizsgalatok_vesebetegsegekben_2024 (1).pdf, immunszerologiai_vizsgalatok_vesebetegsegekben_2024.pdf, jardiance-epar-product-information_hu.pdf, ki-burden_of_kd_2019.pdf, ULAR recommendations for the management ofsystemic lup-2023 update - EULAR-ERA-LN-2025 .pdf, (ZAJOS AI-nak)gyógyszergyári hatósági alkalmazási előírás - forxiga-epar-product-information_hu.pdf, esc_esh_guidelines_2018.pdf, immunszerologiai_vizsgalatok_vesebetegsegekben_2024 (1).pdf, immunszerologiai_vizsgalatok_vesebetegsegekben_2024.pdf, jardiance-epar-product-information_hu.pdf, ki-burden_of_kd_2019.pdf, ULAR recommendations for the management ofsystemic lup-2023 update - EULAR-ERA-LN-2025 .pdf
 Ezeket nevezd at kezzel a 00_FORRAS_ID_LISTA.md alapjan.
 
 >>> Mehet tovabb? [Enter = igen, n = kilepes] i
@@ -1115,7 +1115,7 @@ Ezeket nevezd at kezzel a 00_FORRAS_ID_LISTA.md alapjan.
   Mit csinaljak? [c / s / sajat azonosito]: SGLT2-CKD-M-2024-2    
   OK -> 02_manet_tarsasag/_pdf/SGLT2-CKD-M-2024-2.pdf
 
-[ULAR recommendations for the management ofsystemic lup-2023 update - EULAR-ERA-LN-2023 .pdf]  <-- nincs szovegreteg (szkennelt?). Kihagyva.
+[ULAR recommendations for the management ofsystemic lup-2023 update - EULAR-ERA-LN-2025 .pdf]  <-- nincs szovegreteg (szkennelt?). Kihagyva.
 
 [(ZAJOS AI-nak)gyógyszergyári hatósági alkalmazási előírás - forxiga-epar-product-information_hu.pdf]
   eleje: 1 i. melleklet alkalmazasi eloiras…
@@ -1209,10 +1209,10 @@ Ezeket nevezd at kezzel a 00_FORRAS_ID_LISTA.md alapjan.
 
 [sglt2_gatlok_alkalmazasa_idult_vesebetegsegben_2024.pdf]  <-- nincs szovegreteg (szkennelt?). Kihagyva.
 
-[ULAR recommendations for the management ofsystemic lup-2023 update - EULAR-ERA-LN-2023 .pdf]  <-- nincs szovegreteg (szkennelt?). Kihagyva.
+[ULAR recommendations for the management ofsystemic lup-2023 update - EULAR-ERA-LN-2025 .pdf]  <-- nincs szovegreteg (szkennelt?). Kihagyva.
 
 ==== 34 fajl atnevezve es bemozgatva.
-Kihagyva (48): (ZAJOS AI-nak)gyógyszergyári hatósági alkalmazási előírás - forxiga-epar-product-information_hu.pdf, esc_esh_guidelines_2018.pdf, immunszerologiai_vizsgalatok_vesebetegsegekben_2024 (1).pdf, immunszerologiai_vizsgalatok_vesebetegsegekben_2024.pdf, jardiance-epar-product-information_hu.pdf, ki-burden_of_kd_2019.pdf, ULAR recommendations for the management ofsystemic lup-2023 update - EULAR-ERA-LN-2023 .pdf, (ZAJOS AI-nak)gyógyszergyári hatósági alkalmazási előírás - forxiga-epar-product-information_hu.pdf, 2023 - A diabetes mellitus kórismézéséről, a cukorbetegek antihyperglykaemiás kezeléséről és gondozásáról felnőttkorban.pdf, Approach to Hematuria- Core Curriculum 2026.pdf, az_idult_vesebetegseg_felismerese_es_beosztasa.pdf, bm_eu_szakmai_iranyelve_a_felnottkori_idult_vesebetegseg_diagnozisarol_es_kezeleserol_20250430.pdf, boekje_niertransplantatie_hungarian_okdruk.pdf, diabetes_hungarian_120416_final.pdf, egfr_uacr_upcr_laboroknak.pdf, esc_esh_guidelines_2018.pdf, final_bi-haziorvosi-ellenorzolista-210x297mm-260309.pdf, gfr_gyogyszerdozis_nkf1.pdf, h_and_n_suppl_ckd_iranyelv_2025.pdf, Hemodialysis Vascular Access- Core Curriculum 2025.pdf, hn_2015_3_iranyelv_kommentar.pdf, hn_2021_suppl_1_online.pdf, hn_mht_iranyelv_2025_megj_szept_15_j_20251022.pdf, immunszerologiai_vizsgalatok_vesebetegsegekben_2024 (1).pdf, immunszerologiai_vizsgalatok_vesebetegsegekben_2024.pdf, jardiance-epar-product-information_hu.pdf, javaslat_a_nephrogen_szisztemas_fibrosis_megelozesere.pdf, KDIGO 2025 GUIDELINE FOR  AUTOSOMAL DOMINANT POLYCYSTIC KIDNEY DISEASE (ADPKD).pdf, KDIGO 2025 Immunoglobulin A  Nephropathy (IgAN) and Immunoglobulin A Vasculitis (IgAV).pdf, KDIGO 2026 Clinical Practice Guideline for the Management of Anemia in Chronic Kidney Disease (CKD).pdf, KDIGO 2026 Guideline for the Management of Anemia in Chronic Kidney Disease (CKD) 2.pdf, KDIGO-2013-Lipids-Guideline.pdf, KDIGO-2017-CKD-MBD-Guideline - KDIGO 2017 Clinical Practice Guideline Update for the Diagnosis, Evaluation, Prevention, and Treatment of Chronic Kidney Disease–Mineral and Bone Disorder (CKD-MBD).pdf, KDIGO-2026-Anemia-in-CKD-Guideline-Executive-Summary.pdf, ki-burden_of_kd_2019.pdf, Kidney Dysfunction in Heart Failure- Core Curriculum 2025.pdf, lipidkezeles_ckdban_2024_manet.pdf, management_of_blood_pressure_in_chronic_kidney_disease_kdigo_2021._executive_summary.pdf, management_of_blood_pressure_in_chronic_kidney_disease_kdigo_2021._full.pdf, manet_javaslatai_2020_cv_konf_ea.pdf, ndt_ajanlas_veseko_2011.pdf, Nutrition in Kidney Disease- Core Curriculum 2022.pdf, Onconephrology- Core Curriculum 2023.pdf, percutan_nativ_vesebiopszia_vegzese_felnottkori_nephrologiai_korkepekben.pdf, radiojod_kontrasztanyagok_altal_okozott_vesekarosodas_es_megelozese.pdf, rod_szakmai_iranyelv_2012.pdf, sglt2_gatlok_alkalmazasa_idult_vesebetegsegben_2024.pdf, ULAR recommendations for the management ofsystemic lup-2023 update - EULAR-ERA-LN-2023 .pdf
+Kihagyva (48): (ZAJOS AI-nak)gyógyszergyári hatósági alkalmazási előírás - forxiga-epar-product-information_hu.pdf, esc_esh_guidelines_2018.pdf, immunszerologiai_vizsgalatok_vesebetegsegekben_2024 (1).pdf, immunszerologiai_vizsgalatok_vesebetegsegekben_2024.pdf, jardiance-epar-product-information_hu.pdf, ki-burden_of_kd_2019.pdf, ULAR recommendations for the management ofsystemic lup-2023 update - EULAR-ERA-LN-2025 .pdf, (ZAJOS AI-nak)gyógyszergyári hatósági alkalmazási előírás - forxiga-epar-product-information_hu.pdf, 2023 - A diabetes mellitus kórismézéséről, a cukorbetegek antihyperglykaemiás kezeléséről és gondozásáról felnőttkorban.pdf, Approach to Hematuria- Core Curriculum 2026.pdf, az_idult_vesebetegseg_felismerese_es_beosztasa.pdf, bm_eu_szakmai_iranyelve_a_felnottkori_idult_vesebetegseg_diagnozisarol_es_kezeleserol_20250430.pdf, boekje_niertransplantatie_hungarian_okdruk.pdf, diabetes_hungarian_120416_final.pdf, egfr_uacr_upcr_laboroknak.pdf, esc_esh_guidelines_2018.pdf, final_bi-haziorvosi-ellenorzolista-210x297mm-260309.pdf, gfr_gyogyszerdozis_nkf1.pdf, h_and_n_suppl_ckd_iranyelv_2025.pdf, Hemodialysis Vascular Access- Core Curriculum 2025.pdf, hn_2015_3_iranyelv_kommentar.pdf, hn_2021_suppl_1_online.pdf, hn_mht_iranyelv_2025_megj_szept_15_j_20251022.pdf, immunszerologiai_vizsgalatok_vesebetegsegekben_2024 (1).pdf, immunszerologiai_vizsgalatok_vesebetegsegekben_2024.pdf, jardiance-epar-product-information_hu.pdf, javaslat_a_nephrogen_szisztemas_fibrosis_megelozesere.pdf, KDIGO 2025 GUIDELINE FOR  AUTOSOMAL DOMINANT POLYCYSTIC KIDNEY DISEASE (ADPKD).pdf, KDIGO 2025 Immunoglobulin A  Nephropathy (IgAN) and Immunoglobulin A Vasculitis (IgAV).pdf, KDIGO 2026 Clinical Practice Guideline for the Management of Anemia in Chronic Kidney Disease (CKD).pdf, KDIGO 2026 Guideline for the Management of Anemia in Chronic Kidney Disease (CKD) 2.pdf, KDIGO-2013-Lipids-Guideline.pdf, KDIGO-2017-CKD-MBD-Guideline - KDIGO 2017 Clinical Practice Guideline Update for the Diagnosis, Evaluation, Prevention, and Treatment of Chronic Kidney Disease–Mineral and Bone Disorder (CKD-MBD).pdf, KDIGO-2026-Anemia-in-CKD-Guideline-Executive-Summary.pdf, ki-burden_of_kd_2019.pdf, Kidney Dysfunction in Heart Failure- Core Curriculum 2025.pdf, lipidkezeles_ckdban_2024_manet.pdf, management_of_blood_pressure_in_chronic_kidney_disease_kdigo_2021._executive_summary.pdf, management_of_blood_pressure_in_chronic_kidney_disease_kdigo_2021._full.pdf, manet_javaslatai_2020_cv_konf_ea.pdf, ndt_ajanlas_veseko_2011.pdf, Nutrition in Kidney Disease- Core Curriculum 2022.pdf, Onconephrology- Core Curriculum 2023.pdf, percutan_nativ_vesebiopszia_vegzese_felnottkori_nephrologiai_korkepekben.pdf, radiojod_kontrasztanyagok_altal_okozott_vesekarosodas_es_megelozese.pdf, rod_szakmai_iranyelv_2012.pdf, sglt2_gatlok_alkalmazasa_idult_vesebetegsegben_2024.pdf, ULAR recommendations for the management ofsystemic lup-2023 update - EULAR-ERA-LN-2025 .pdf
 Ezeket nevezd at kezzel a 00_FORRAS_ID_LISTA.md alapjan.
 
 Kovetkezo lepes:  python _scriptek/pdf_horgonnyal.py
