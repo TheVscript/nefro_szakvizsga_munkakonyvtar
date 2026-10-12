@@ -1,3 +1,6 @@
+> **Forras:** TETELSOR-NEFROLOGIA-2024-07-25
+> **A horgonyokban szereplo p.NNN a PDF FIZIKAI oldalszama** (1-tol szamozva, borito is beleertve), nem a dokumentum sajat, nyomtatott lapszama. Visszakeresesnel a PDF-nezegeto oldalszamat hasznald.
+
 
 
 ===== [TETELSOR-NEFROLOGIA-2024-07-25 | p.001] =====
